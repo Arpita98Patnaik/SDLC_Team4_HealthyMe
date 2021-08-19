@@ -26,8 +26,25 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 * **May be inaccurate:** Fitness app rely to a large extend on the data provided by the user and may sometimes be inaccurate in case the user data is not updated frequently and accurately.
 * **May or may not be helpful:** Unlike a paid membership at the Gym where a trainer ensures you achieve your workout goals fitness app rely on the user to make a concious effort else there would be no scope for improvement in the users lifestyle.
 * **May be unregulated and sometimes harmful:** As of now there are multiple fitness apps availabe to be downloaded for free online but a majority of these apps are unregulated and do not have set standards due to which there is o certain assurance that the recomended plan might benifit the user.
- 
+
 ## Cost and Features
+Development of a fitness application involve large costs in terms of UI/UX design, quality assurance services, DevOps services and project management. A **Minimum value product** is first developed which is the app with only the basic and used to get user feedback after which advanced features can be gradually added.
+
+On an average considering the development time spent on the various aspects of an app with an estimated cost of around $50/hour rate:
+
+| Type of work | Back-end development  | iOS development  |  Android development |
+| :-----: | :-: | :-: | :-----: |
+| Features | 228 hours | 438 hours | 438 hours |
+| Frameworks and libraries integration | 35 hours | 36 hours | 36 hours |
+| UI/UX design | - | 120 hours | 120 hours |
+| Quality assurance | 194 hours | 343 hours | 343 hours |
+| DevOps | 36 hours | 62 hours | 62 hours |
+| Project management | 124 hours | 218 hours | 218 hours |
+| Total time | 617 hours | 1217 hours | 1217 hours |
+
+Based on the above data we can estimate a cost of at least **$88,250** for one platform and **$150,850** for two platforms.
+
+**Reference:** *https://www.cleveroad.com/blog/how-much-does-it-cost-to-make-a-fitness-app*
 
 ## SWOT Analysis
 
