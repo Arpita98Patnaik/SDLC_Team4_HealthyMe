@@ -38,6 +38,12 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 * **May be inaccurate:** Fitness app rely to a large extend on the data provided by the user and may sometimes be inaccurate in case the user data is not updated frequently and accurately.
 * **May or may not be helpful:** Unlike a paid membership at the Gym where a trainer ensures you achieve your workout goals fitness app rely on the user to make a concious effort else there would be no scope for improvement in the users lifestyle.
 * **May be unregulated and sometimes harmful:** As of now there are multiple fitness apps availabe to be downloaded for free online but a majority of these apps are unregulated and do not have set standards due to which there is o certain assurance that the recomended plan might benifit the user.
+- Disadvantage Of Using BMI:
+    - BMI is simply a measure of your weight versus your height, it doesn't take into account where that weight comes from -- lean tissue or fat.
+    - It also doesn't distinguish between the type of fat you carry -- subcutaneous or visceral fat. It does not distinguish between excess fat, muscle, or bone mass
+    - It doesn't account for body composition
+- Disadvantage Of Using BMR:
+    - Metabolic rate measurements can change over time, and are affected by body weight, height and age
 
 ## Cost and Features
 
