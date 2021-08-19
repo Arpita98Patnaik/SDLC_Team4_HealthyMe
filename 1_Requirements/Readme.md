@@ -17,6 +17,18 @@ Healthy Me is an inexpensive and easy to use appliaction that can recommend a cu
 This data is used to calculate the user's **BMI, BMR** index and these values would then be used to ensure that the best possible fitness regime is recommended. The user may also accurately track their calorie intake to ensure they stick to the set plan and also keep a track of their water intake and set personalised goal that meets their requirements and comfort. All this coupled with easy access anytime and anywhere makes Healthy Me a convincing application that would be of great to use to a large demographic of young users and working professionals. 
 
 ### Advantages
+- BMI:
+    - BMI is body mass index which a measure of weight versus height and tell about person's health conditions.
+    - BMI above 18.5 indicates person is well nourished and below 18.5 indicates person is undernourished hence good BMI is important for a healthy nation, and its development as       education and health are the assets of economic development.
+    - It is a simple, inexpensive, and noninvasive surrogate measure of body fat , added advantage is BMI relies solely on height and weight and hence          person can have           their BMI routinely measured and calculated with reasonable accuracy
+    - It helps person to decide whether he/she is overweight or underweight.
+    - It measures rates of obesity and helps analyse obesity related diseases.
+ - BMR:
+    - BMR is Basal Metabolic Rate which helps the body burn calories.It indicates the number of calories a person burns at rest which helps to manage weight.
+    - If a person is trying to loose weight , calculating BMR help to figure out how many calories to cut each day.
+    - Normal BMR ranges from negative 15% to positive 5%
+    - Knowing BMR is important no matter what is the nutrition, fitness and weight goals are.
+  
 * **Work out Anywhere:** As an application that is available on the go workouts are no longer restricted to a particular and can be done at any location as per the users convenience.
 * **Cost Effective:** As these workouts do not require any specialised equipments they are usually cost effective with only a small subscription charge billed monthly or yearly based on the users requirement.
 * **All in one Health App:** The can not only provide workout sessions but also recomend balanced diet plans and also help keep a track of daily calorie intake and help improve your lifestyle habits and health.
@@ -28,23 +40,6 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 * **May be unregulated and sometimes harmful:** As of now there are multiple fitness apps availabe to be downloaded for free online but a majority of these apps are unregulated and do not have set standards due to which there is o certain assurance that the recomended plan might benifit the user.
 
 ## Cost and Features
-Development of a fitness application involve large costs in terms of UI/UX design, quality assurance services, DevOps services and project management. A **Minimum value product** is first developed which is the app with only the basic and used to get user feedback after which advanced features can be gradually added.
-
-On an average considering the development time spent on the various aspects of an app with an estimated cost of around $50/hour rate:
-
-| Type of work | Back-end development  | iOS development  |  Android development |
-| :-----: | :-: | :-: | :-----: |
-| Features | 228 hours | 438 hours | 438 hours |
-| Frameworks and libraries integration | 35 hours | 36 hours | 36 hours |
-| UI/UX design | - | 120 hours | 120 hours |
-| Quality assurance | 194 hours | 343 hours | 343 hours |
-| DevOps | 36 hours | 62 hours | 62 hours |
-| Project management | 124 hours | 218 hours | 218 hours |
-| Total time | 617 hours | 1217 hours | 1217 hours |
-
-Based on the above data we can estimate a cost of at least **$88,250** for one platform and **$150,850** for two platforms.
-
-**Reference:** *https://www.cleveroad.com/blog/how-much-does-it-cost-to-make-a-fitness-app*
 
 ## SWOT Analysis
 ![SWOT (1)](https://user-images.githubusercontent.com/57947483/130075269-d707a97e-0cd4-4105-9767-613ea794aa26.png)
