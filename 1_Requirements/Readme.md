@@ -15,8 +15,11 @@ Physical fitness and health plays an important role in our day to day life. Regu
 ## SWOT Analysis
 
 # 4W's & 1H
+## Who
+*
 ## What
-* 
+*
+
 
 # Detail requirements
 ## High Level Requirements:
