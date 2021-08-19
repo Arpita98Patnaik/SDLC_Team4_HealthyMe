@@ -51,7 +51,7 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 # Detail requirements
 ## High Level Requirements:
 | ID | Description | Status (Implemented/Future)|
-|:--|:----------------------------------|:-----------------|:-------------------|
+|:--|:----------------------------------|:-------------------|
 | HR.01 | User should be able to enter data in SI and Imperial system of units| - |
 | HR.02 | System should be able to output personalized calorie intake | - |
 | HR.03 | System should be able to output personalized workout routine | - |
