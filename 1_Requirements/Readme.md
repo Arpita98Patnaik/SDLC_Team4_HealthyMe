@@ -16,7 +16,7 @@ Physical fitness and health plays an important role in our day to day life. Regu
 
 # 4W's & 1H
 ## Who
-* BMI calculators and similarly BMR calculators are popularly used by persons on a weight loss regime
+* BMI calculators and BMR calculators are popularly used by people on a weight loss regime.
 ## What
 *
 ## When
