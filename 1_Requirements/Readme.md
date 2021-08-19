@@ -42,11 +42,12 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
   fat based on height and weight.
 * Scheduling the diet plan and workout plan based on the data.
 ## When
-*
+* During health complicataions, related to weight gain or weight loss.
+* Whenever the user requires to actively monitor their calorie and water intake.
 ## Where
-*
+* The user can access this application at the comfort of their home/office. 
 ## How
-
+* The user can access the console through laptops/computer and get personalized diet and workout charts at the comfort of their home/office.
 
 # Detail requirements
 ## High Level Requirements:
