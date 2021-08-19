@@ -19,6 +19,11 @@ Physical fitness and health plays an important role in our day to day life. Regu
 *
 ## What
 *
+## When
+*
+## Where
+*
+## How
 
 
 # Detail requirements
