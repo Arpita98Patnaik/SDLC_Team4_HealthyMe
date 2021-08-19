@@ -36,7 +36,11 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 ## Who
 * BMI calculators and BMR calculators are popularly used by people on a weight loss regime.
 ## What
-*
+*  Determining the height and weight of a person and calculating BMI(Body Mass Index) and BMR(Basal 
+   Metabolic Rate).
+* BMR is the number of calories required to keep body functioning at rest while BMI is a measure of body
+  fat based on height and weight.
+* Scheduling the diet plan and workout plan based on the data.
 ## When
 *
 ## Where
