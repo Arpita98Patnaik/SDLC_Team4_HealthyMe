@@ -13,6 +13,7 @@ With the advent of Fast-food chain restaurants there are unhealty yet tasty fast
 ## Cost and Features
 
 ## SWOT Analysis
+![SWOT (1)](https://user-images.githubusercontent.com/57947483/130075269-d707a97e-0cd4-4105-9767-613ea794aa26.png)
 
 # 4W's & 1H
 ## Who
