@@ -4,7 +4,9 @@ Physical fitness and health plays an important role in our day to day life. Regu
 
 ## Research
 ### The idea behind *Healthy Me!*
-With the advent of Fast-food chain restaurants there are unhealty yet tasty fast food items that are avaiable at cheaper prices and with the introduction of food delivery aggregators people are inclined to rather order out rather than maintain a balanced or healthy diet. Improving technology has also played a major role in our everyday lives with an increase in jobs that promote an increasingly sendentary lifestyle. All these factors have contributed to a decline in the over all health and lifestyle of people these days.
+With the advent of Fast-food chain restaurants there are unhealty yet tasty fast food items that are avaiable at cheaper prices and with the introduction of food delivery aggregators people are inclined to order out rather than maintain a balanced or healthy diet. Improving technology has also played a major role in our everyday lives with an increase in jobs that promote an increasingly sendentary lifestyle. All these factors have contributed to a decline in the over all health and lifestyle of people these days.
+
+
 
 ### Advantages
 
