@@ -47,9 +47,9 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 ## Where
 * The user can access this application at the comfort of their home/office. 
 ## How
-* The user can access the console through laptops/computer and get personalized diet and workout charts at the comfort of their home/office.
+* The user can access the console through laptops/computer and get personalized diet and workout charts at the comfort of their home/office. 
 
-# Detail requirements
+# Detail requirements 
 ## High Level Requirements:
 | ID | Description | Status (Implemented/Future)|
 |:--|:----------------------------------|:-------------------|
@@ -61,5 +61,7 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 
 
 ##  Low level Requirements:
-| ID | Description  | Status (Implemented/Future) |
-| :-----: | :-: | :-: |
+| ID | Description | Status (Implemented/Future)|
+|:--|:----------------------------------|:-------------------|
+| LR.01 | User should be able to enter weight and height to calculate BMI| - |
+
