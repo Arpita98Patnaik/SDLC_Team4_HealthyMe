@@ -17,18 +17,6 @@ Healthy Me is an inexpensive and easy to use appliaction that can recommend a cu
 This data is used to calculate the user's **BMI, BMR** index and these values would then be used to ensure that the best possible fitness regime is recommended. The user may also accurately track their calorie intake to ensure they stick to the set plan and also keep a track of their water intake and set personalised goal that meets their requirements and comfort. All this coupled with easy access anytime and anywhere makes Healthy Me a convincing application that would be of great to use to a large demographic of young users and working professionals. 
 
 ### Advantages
-- **BMI**:
-    - BMI is body mass index which a measure of weight versus height and tell about person's health conditions.
-    - BMI above 18.5 indicates person is well nourished and below 18.5 indicates person is undernourished hence good BMI is important for a healthy nation, and its development as       education and health are the assets of economic development.
-    - It is a simple, inexpensive, and noninvasive surrogate measure of body fat , added advantage is BMI relies solely on height and weight and hence          person can have           their BMI routinely measured and calculated with reasonable accuracy
-    - It helps person to decide whether he/she is overweight or underweight.
-    - It measures rates of obesity and helps analyse obesity related diseases.
- - **BMR**:
-    - BMR is Basal Metabolic Rate which helps the body burn calories.It indicates the number of calories a person burns at rest which helps to manage weight.
-    - If a person is trying to loose weight , calculating BMR help to figure out how many calories to cut each day.
-    - Normal BMR ranges from negative 15% to positive 5%
-    - Knowing BMR is important no matter what is the nutrition, fitness and weight goals are.
-  
 * **Work out Anywhere:** As an application that is available on the go workouts are no longer restricted to a particular and can be done at any location as per the users convenience.
 * **Cost Effective:** As these workouts do not require any specialised equipments they are usually cost effective with only a small subscription charge billed monthly or yearly based on the users requirement.
 * **All in one Health App:** The can not only provide workout sessions but also recomend balanced diet plans and also help keep a track of daily calorie intake and help improve your lifestyle habits and health.
@@ -38,12 +26,6 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 * **May be inaccurate:** Fitness app rely to a large extend on the data provided by the user and may sometimes be inaccurate in case the user data is not updated frequently and accurately.
 * **May or may not be helpful:** Unlike a paid membership at the Gym where a trainer ensures you achieve your workout goals fitness app rely on the user to make a concious effort else there would be no scope for improvement in the users lifestyle.
 * **May be unregulated and sometimes harmful:** As of now there are multiple fitness apps availabe to be downloaded for free online but a majority of these apps are unregulated and do not have set standards due to which there is o certain assurance that the recomended plan might benifit the user.
-- **Disadvantage Of Using BMI**:
-    - BMI is simply a measure of your weight versus your height, it doesn't take into account where that weight comes from -- lean tissue or fat.
-    - It also doesn't distinguish between the type of fat you carry -- subcutaneous or visceral fat. It does not distinguish between excess fat, muscle, or bone mass
-    - It doesn't account for body composition
-- **Disadvantage Of Using BMR**:
-    - Metabolic rate measurements can change over time, and are affected by body weight, height and age
 
 ## Cost and Features
 
@@ -68,9 +50,17 @@ This data is used to calculate the user's **BMI, BMR** index and these values wo
 
 # Detail requirements
 ## High Level Requirements:
-| ID | Description  | Status  |
-| :-----: | :-: | :-: |
+
+| ID | Description | Status (Implemented/Future)|
+|:--|:----------------------------------|:-----------------|:-------------------|
+| HR.01 | User should be able to enter data in SI and Imperial system of units| - |
+| HR.02 | System should be able to output personalized calorie intake | - |
+| HR.03 | System should be able to output personalized workout routine | - |
+| HR.04 | System should be able to provide workout intensity choices to the user (Basic, Moderate, Extensive) | - |
+| HR.05 | System should be able to provide the water intake to the user | - |
+
 
 ##  Low level Requirements:
-| ID | Description  | Status  |
+
+| ID | Description  | Status (Implemented/Future) |
 | :-----: | :-: | :-: |
