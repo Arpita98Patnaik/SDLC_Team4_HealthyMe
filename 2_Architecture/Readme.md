@@ -8,6 +8,14 @@
 
 ## Low Level Design 
 
+**Workout Plan**
+
+
+
+**Diet Plan**
+
+![Diet_Plan](2_Architecture/Diet plan flowchart.PNG)
+
 **Water In-take**
 
 ![Water_intake](https://user-images.githubusercontent.com/57947483/130231390-1b5649ee-712a-4b0d-903e-11164bcafb09.jpeg)
