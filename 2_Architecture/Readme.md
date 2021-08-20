@@ -2,7 +2,7 @@
 
 ## High Level Design 
 **Architecture Design**
-![Architectural diagram](https://user-images.githubusercontent.com/57947483/130231221-582b513c-f0a9-404a-9865-d7efce31a989.png)
+![Architectural diagram](https://user-images.githubusercontent.com/57947483/130231221-582b513c-f0a9-404a-9865-d7efce31a989.png= 250*250)
 
 **Use Case diagram**
 
