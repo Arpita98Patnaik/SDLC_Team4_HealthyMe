@@ -33,7 +33,7 @@ PS No. |  Name  |    Features    | Issues Raised |Issues Resolved|#Test Cases|# 
 --|--|---|-----|--|---|-------
 99005666|Archana R Bailkeri|*|*|*|*|*|
 99005586|Jenikaben Rajendrakumar Patel|*|*|*|*|*|
-99005387|VARNA  M|*|*|*|*|*|
+99005387|Varna  M|*|*|*|*|*|
 99005668|Suraj  Kumar|*|*|*|*|*|
 99005644|Madhura  M|*|*|*|*|*|
 99005650|Gopika  H|*|*|*|*|*|
