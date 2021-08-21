@@ -10,7 +10,7 @@
 
 **Workout Plan**
 
-![WorkPlan](https://github.com/99Pp/SDLC_Team4_HealthyMe/blob/main/2_Architecture/Diet%20plan%20flowchart.PNG)
+![WorkPlan](https://github.com/99Pp/SDLC_Team4_HealthyMe/blob/main/2_Architecture/WorkPlan.png)
 
 
 
