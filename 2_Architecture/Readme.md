@@ -9,6 +9,7 @@
 ## Low Level Design 
 
 **Workout Plan**
+![Workout_Plan](https://github.com/99Pp/SDLC_Team4_HealthyMe/blob/main/2_Architecture/WorkPlan.PNG)
 
 
 
