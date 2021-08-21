@@ -20,11 +20,18 @@ The formula used to calculate BMR is:
 */
 #include"BMIBMR.h"
 
-// BMI Calculator
 #include<stdio.h>
 
 #include<stdlib.h>
+#include<string.h>
 #include <math.h>
+void calcBMI();
+const char* bmiResult(double bmi);
+double bmrResult(char gender[20], double weight, double height, double age);
+double calcBMR();
+
+
+
 
 
 void calcBMI() {
@@ -35,6 +42,7 @@ void calcBMI() {
 	double height;
 	double bmi;
 	char word[20];
+	
 
 	printf("\nEnter your weight (Kg): ");
 	scanf("%lf",&weight);
@@ -47,25 +55,30 @@ void calcBMI() {
 
 	//Print
 	printf( "\n Your Body Mass Index (BMI) is:%lf \n",bmi);
-	char word[20] = bmiResult(bmi);
-	printf("According to your Body Mass Index (BMI) you're %s\n",word);
+	//*word=bmiResult(bmi);
+	
+	//printf("According to your Body Mass Index (BMI) you're %s\n",*word);
+	printf("According to your Body Mass Index (BMI) you're %s\n",bmiResult(bmi));
 }
 
 
-char bmiResult(double bmi) {
+const char* bmiResult(double bmi) {
 	char word[20];
 
 	if (bmi < 18.5) {
-		char word[] = "underweight";
+		strcpy(word,"underweight");
 	}
 	else if (bmi >= 18.5 && bmi <= 24.9) {
-		char word[] = "normal weighted";
+	    strcpy(word,"normal weight");
+		//word = "normal weighted";
 	}
 	else if (bmi >= 25 && bmi <= 29.9) {
-		char word[] = "overweight";
+	    strcpy(word,"overweight");
+		//word = "overweight";
 	}
 	else if (bmi >= 30) {
-		char word[] = "obese";
+	    strcpy(word,"obese");
+		//word = "obese";
 	}
 	return word;
 }
@@ -73,7 +86,7 @@ char bmiResult(double bmi) {
 
 
 //BMR Calculator
-double bmrResult(string gender, double weight, double height, double age) {
+double bmrResult(char gender[20], double weight, double height, double age) {
 	//Calculations
 	double bmr;
 	bmr = 0;
