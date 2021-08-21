@@ -1,8 +1,10 @@
+#include "dietPlan.h"
+#include "Cal_Intake.h"
 #include<stdio.h>
 #include<stdlib.h>
 void mealchoice()
 {
-    int brkfst_limit=0, lunch_limit=0, snack_limit =0,  dinner_limit =0, bmr;
+    int brkfst_limit=0, lunch_limit=0, snack_limit =0,  dinner_limit =0;
     int choice;
     do
     {
@@ -26,25 +28,28 @@ void mealchoice()
             system("cls");
         }
     } while (choice<=1||choice>=3);
-    int brkfst_priority()
-    {
-        brkfst_limit = (40/100)*bmr;
-        lunch_limit = (20 / 100)*bmr;
-        snack_limit = (10/100)*bmr;
-        dinner_limit = (30/100)*bmr; 
-    }
-        int lunch_priority()
-    {
-        brkfst_limit = (30/100)*bmr;
-        lunch_limit = (40/100)*bmr;
-        snack_limit = (10/100)*bmr;
-        dinner_limit = (20/100)*bmr; 
-    }
-        int dinner_priority()
-    {
-        brkfst_limit = (20/100)*bmr;
-        lunch_limit = (30/100)*bmr;
-        snack_limit = (10/100)*bmr;
-        dinner_limit = (40/100)*bmr; 
-    }
+}
+int brkfst_priority()
+{
+    brkfst_limit = (40/100)*bmr;
+    lunch_limit = (20 / 100)*bmr;
+    snack_limit = (10/100)*bmr;
+    dinner_limit = (30/100)*bmr;
+    dietPlan(); 
+}
+int lunch_priority()
+{
+    brkfst_limit = (30/100)*bmr;
+    lunch_limit = (40/100)*bmr;
+    snack_limit = (10/100)*bmr;
+    dinner_limit = (20/100)*bmr;
+    dietPlan(); 
+}
+int dinner_priority()
+{
+    brkfst_limit = (20/100)*bmr;
+    lunch_limit = (30/100)*bmr;
+    snack_limit = (10/100)*bmr;
+    dinner_limit = (40/100)*bmr; 
+    dietPlan();
 }

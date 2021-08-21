@@ -1,4 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "Enabled",
-    "problems.showCurrentInStatus": true
+    "problems.showCurrentInStatus": true,
+    "files.associations": {
+        "stdlib.h": "c"
+    }
 }

@@ -1,10 +1,10 @@
+# Name of the project
 PROJ_NAME = HealthyMe
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
+# Output directory
 BUILD_DIR = build
 TEST_BUILD_DIR = test_build
-
-
 
 ifdef OS
    RM = del /q
@@ -18,7 +18,7 @@ else
    endif
 endif
 
-
+# All test source files
 SRC = \
 
 
@@ -27,6 +27,7 @@ TEST_SRC = \
 test/unity.c \
 test/test_main.c\
 
+# All include folders with header files
 INC = \
 -Iinc \
 -Itest \
@@ -42,11 +43,13 @@ run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 
-
+# Build and run the unit tests
 test_build: $(SRC) $(TEST_SRC) $(BUILD_DIR)
 	gcc $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
 
 test: test_build
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))

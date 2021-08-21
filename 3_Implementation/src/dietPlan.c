@@ -1,4 +1,5 @@
 #include "dietPlan.h"
+#include "Cal_Intake.h"
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -136,8 +137,12 @@ int printBrkfstList(brkfst *head){
 
       printf("\n");
       while(temp!=NULL){
-            
-            printf("%-49s\t%d\n",temp->name,temp->cal);
+
+            //printf("%-49s\t%d\n",temp->name,temp->cal);
+            if (temp->cal<brkfst_limit)
+            {
+                print("%-49s\t%d\n",temp->name,temp->cal);
+            }
             temp = temp->next;
       }
       return 1;
@@ -152,7 +157,11 @@ int printLunchList(lunch *head){
       printf("\n");
       while(temp!=NULL){
             
-            printf("%-49s\t%d\n",temp->name,temp->cal);
+            //printf("%-49s\t%d\n",temp->name,temp->cal);
+            if (temp->cal<lunch_limit)
+            {
+                print("%-49s\t%d\n",temp->name,temp->cal);
+            }
             temp = temp->next;
       }
       return 1;
@@ -167,7 +176,11 @@ int printSnacksList(snack *head){
       printf("\n");
       while(temp!=NULL){
             
-            printf("%-49s\t%d\n",temp->name,temp->cal);
+            //printf("%-49s\t%d\n",temp->name,temp->cal);
+            if (temp->cal<snack_limit)
+            {
+                print("%-49s\t%d\n",temp->name,temp->cal);
+            }
             temp = temp->next;
       }
       return 1;
@@ -182,7 +195,11 @@ int printDinnerList(dinner *head){
       printf("\n");
       while(temp!=NULL){
             
-            printf("%-49s\t%d\n",temp->name,temp->cal);
+            //printf("%-49s\t%d\n",temp->name,temp->cal);
+            if (temp->cal<dinner_limit)
+            {
+                print("%-49s\t%d\n",temp->name,temp->cal);
+            }
             temp = temp->next;
       }
       return 1;
