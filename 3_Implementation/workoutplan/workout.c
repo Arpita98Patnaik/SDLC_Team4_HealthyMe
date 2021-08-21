@@ -8,7 +8,7 @@ void advanced();
 
 
 float bmi , reduce_weight,total_calories;
-int choice ; 
+int choice ,select; 
 char store_string[1000];
 
 int no_of_days;
@@ -36,6 +36,14 @@ void workout(float bmi)
         printf("Healthy BMI range should be 18.6 to 24.9\n");
         printf("Please enter how many kilos you wish to reduce\n");
         scanf("%f" , &reduce_weight);
+        if(reduce_weight==0)
+        {
+            sprintf(store_string,"First step to lose Weight. Get and stay active!""\n"
+            "Thank you""\n");
+            printf("%s",store_string);
+        }
+        else if(reduce_weight>=1 && reduce_weight<=20)
+        {
         printf("Please select pace of workout\n");
         printf("1.Beginner (to burn 500 calories/day)\n2.Intermediate (to burn 1500 calories/day)\n3.Advanced (to burn 3000 calories/day)\n");
         scanf("%d",&choice);
@@ -61,6 +69,39 @@ void workout(float bmi)
                 printf("Please enter valid input\n");
                 break;
             }
+        }
+        }
+        else
+        {
+            sprintf(store_string,
+            "==============================================================""\n"
+            "Please choose within the range of 0 to 20 kgs""\n"
+            
+            "Select""\n"
+            "1. To continue""\n"
+            "2. Exit""\n"
+            "==============================================================""\n");
+            printf("%s",store_string);
+            scanf("%d",&select);
+            switch(select)
+            {
+                case 1:
+                {
+                    workout(bmi);
+                    break;
+                }
+                case 2:
+                {
+                    printf("Thank You\n");
+                    break;
+                }
+                default:
+                {
+                    printf("Invalid choice\n");
+                    break;
+                }
+            }
+            //workout(bmi);
         }
         
         
