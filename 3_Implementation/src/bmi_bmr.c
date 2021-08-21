@@ -25,7 +25,7 @@ The formula used to calculate BMR is:
 #include <math.h>
 void calcBMI();
 const char* bmiResult(double bmi);
-double bmrResult(char gender[20], double weight, double height, double age);
+double bmrResult(int gender, double weight, double height, double age);
 double calcBMR();
 
 
@@ -85,15 +85,15 @@ const char* bmiResult(double bmi) {
 
 
 //BMR Calculator
-double bmrResult(char gender[20], double weight, double height, double age) {
+double bmrResult(int gender, double weight, double height, double age) {
 	//Calculations
 	double bmr;
 	bmr = 0;
 
-	if (gender == "FEMALE") {
+	if (gender == 1) {
 		bmr = (10*weight) + (6.25*height) - (5*age) - 161;
 	}
-	else if (gender == "MALE") {
+	else if (gender == 2) {
 		bmr = (10*weight) + (6.25 * height) - (5*age) + 5;
 	}
 	return bmr;
@@ -102,14 +102,17 @@ double bmrResult(char gender[20], double weight, double height, double age) {
 double calcBMR() {
 	
 	//Variables
-	char gender[25];
+	int gender;
 	double weight;
 	double height;
 	double age;
 
-	printf( "\nEnter your gender (male or female): ");
+	printf("Select gender: \n");
+	printf("1. Female\n");
+	printf("2. Male\n");
+	printf("Enter your choice: ");
 	//gets(gender);
-	scanf("%s",gender);
+	scanf("%d",&gender);
 	//transform (gender.begin(), gender.end(), gender.begin(), [](unsigned char c) {return toupper (c); }); //toupper
 
 	printf("\n\nEnter your weight (kg): ");
@@ -127,9 +130,11 @@ double calcBMR() {
 	printf(" calories per day.\n");
 	return bmr;
 }
+
+
 int main()
 { calcBMI();
-  //calcBMR();
+  calcBMR();
   return 0;
 
 }
