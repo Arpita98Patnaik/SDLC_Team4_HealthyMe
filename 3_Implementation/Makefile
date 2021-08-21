@@ -20,7 +20,8 @@ endif
 
 # All test source files
 SRC = \
-
+src/dietPlan.c \
+src/Cal_Intake.c
 
 
 TEST_SRC = \

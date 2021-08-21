@@ -26,16 +26,15 @@
     }dinner;
 
     brkfst* makeBrkfstList(char*,brkfst*);
-    int printBrkfstList(brkfst*);
-
+    
     lunch* makeLunchList(char*,lunch*);
-    int printLunchList(lunch*);
+   
 
     snack* makeSnacksList(char*,snack*);
-    int printSnacksList(snack*);
+    
 
     dinner* makeDinnerList(char*,dinner*);
-    int printDinnerList(dinner*);
+    
 
 
 
