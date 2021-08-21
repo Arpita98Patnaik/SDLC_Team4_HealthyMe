@@ -8,7 +8,6 @@
     int printSnacksList(snack*);
     int printDinnerList(dinner*);
 
-
     int mealchoice(int,brkfst*,lunch*,snack*,dinner*);
     int brkfst_priority(int,brkfst*,lunch*,snack*,dinner*);
     int lunch_priority(int,brkfst*,lunch*,snack*,dinner*);

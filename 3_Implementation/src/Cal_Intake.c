@@ -13,11 +13,8 @@ int brkfst_limit=0,lunch_limit=0,snack_limit =0,dinner_limit =0;
 
 int mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
-    
-    
     int choice;
-    
-    
+       
     printf("________________________Choose your Meal plan_______________________\n");
     printf("1. Fiesty Breakfast, Light lunch, Healthy dinner\n2.Healthy breakfast, Fiesty lunch, Light dinner\n3. Light Breakfast, Healthy lunch, Fiesty dinner\n");
     fscanf(stdin,"%d",&choice);
@@ -47,23 +44,20 @@ int brkfst_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d
 }
 int lunch_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
-    brkfst_limit = (30/100)*bmr;
-    lunch_limit = (40/100)*bmr;
-    snack_limit = (10/100)*bmr;
-    dinner_limit = (20/100)*bmr;
+    brkfst_limit = (30/100.0)*bmr;
+    lunch_limit = (40/100.0)*bmr;
+    snack_limit = (10/100.0)*bmr;
+    dinner_limit = (20/100.0)*bmr;
     return dietPlan(b_head,l_head,s_head,d_head); 
 }
 int dinner_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
-    brkfst_limit = (20/100)*bmr;
-    lunch_limit = (30/100)*bmr;
-    snack_limit = (10/100)*bmr;
-    dinner_limit = (40/100)*bmr; 
+    brkfst_limit = (20/100.0)*bmr;
+    lunch_limit = (30/100.0)*bmr;
+    snack_limit = (10/100.0)*bmr;
+    dinner_limit = (40/100.0)*bmr; 
     return dietPlan(b_head,l_head,s_head,d_head);
 }
-
-
-
 
 
 int dietPlan(brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head){
