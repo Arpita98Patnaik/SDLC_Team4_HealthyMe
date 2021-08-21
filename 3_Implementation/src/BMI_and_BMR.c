@@ -21,6 +21,12 @@ The formula used to calculate BMR is:
 #include"BMIBMR.h"
 
 // BMI Calculator
+#include<stdio.h>
+
+#include<stdlib.h>
+#include <math.h>
+
+
 void calcBMI() {
 	//Formula --> BMI = weigh * (703 / (height^2)).
 	
@@ -28,37 +34,38 @@ void calcBMI() {
 	double weight;
 	double height;
 	double bmi;
+	char word[20];
 
 	printf("\nEnter your weight (Kg): ");
 	scanf("%lf",&weight);
 
-	printf ("\nEnter your height (m): ");
-	scanf("%d",&height);
+	printf ("\nEnter your height (cm): ");
+	scanf("%lf",&height);
 
 	//Calculations
-	bmi = (weight / pow(height, 2));
+	bmi = (weight /pow(height,2))*10000;
 
 	//Print
-	printf( "\n\nYour Body Mass Index (BMI) is: " <<bmi <<"\n");
-	string word = bmiResult(bmi);
-	printf("According to your Body Mass Index (BMI) you're " << word << ".\n\n");
+	printf( "\n Your Body Mass Index (BMI) is:%lf \n",bmi);
+	char word[20] = bmiResult(bmi);
+	printf("According to your Body Mass Index (BMI) you're %s\n",word);
 }
 
 
-string bmiResult(double bmi) {
-	string word;
+char bmiResult(double bmi) {
+	char word[20];
 
 	if (bmi < 18.5) {
-		word = "underweight";
+		char word[] = "underweight";
 	}
 	else if (bmi >= 18.5 && bmi <= 24.9) {
-		word = "normal weighted";
+		char word[] = "normal weighted";
 	}
 	else if (bmi >= 25 && bmi <= 29.9) {
-		word = "overweight";
+		char word[] = "overweight";
 	}
 	else if (bmi >= 30) {
-		word = "obese";
+		char word[] = "obese";
 	}
 	return word;
 }
@@ -83,7 +90,7 @@ double bmrResult(string gender, double weight, double height, double age) {
 double calcBMR() {
 	
 	//Variables
-	string gender;
+	char gender[25];
 	double weight;
 	double height;
 	double age;
@@ -103,9 +110,12 @@ double calcBMR() {
 
 	//Print
 	double bmr = bmrResult(gender, weight, height, age);
-	printf( "\n\nYou have a Basal Metabolic Rate (BMR) of: " << bmr << " calories per day. \n\n");
+	printf( "\n\nYou have a Basal Metabolic Rate (BMR) of: ",bmr," calories per day. \n\n");
 	return bmr;
 }
+int main()
+{ calcBMI();
+  //calcBMR();
+  return 0;
 
-
-
+}
