@@ -36,13 +36,37 @@ Aplaying the Harris-Benedict Principle:
 using namespace std;
 
 // BMI Calculator
+void calcBMI() {
+	//Formula --> BMI = weigh * (703 / (height^2)).
+	
+	//Variables
+	double weight;
+	double height;
+	double bmi;
+
+	cout << "\nEnter your weight (Kg): ";
+	cin >> weight;
+
+	cout << "\nEnter your height (m): ";
+	cin >> height;
+
+	//Calculations
+	bmi = (weight / pow(height, 2));
+
+	//Print
+	cout << "\n\nYour Body Mass Index (BMI) is: " <<bmi <<"\n";
+	string word = bmiResult(bmi);
+	cout << "According to your Body Mass Index (BMI) you're " << word << ".\n\n";
+}
+
+
 string bmiResult(double bmi) {
 	string word;
 
-	if (bmi < 18.6) {
+	if (bmi < 18.5) {
 		word = "underweight";
 	}
-	else if (bmi >= 18.6 && bmi <= 24.9) {
+	else if (bmi >= 18.5 && bmi <= 24.9) {
 		word = "normal weighted";
 	}
 	else if (bmi >= 25 && bmi <= 29.9) {
@@ -54,28 +78,7 @@ string bmiResult(double bmi) {
 	return word;
 }
 
-void calcBMI() {
-	//Formula --> BMI = weigh * (703 / (height^2)).
-	
-	//Variables
-	double weight;
-	double height;
-	double bmi;
 
-	cout << "\nPlease, type in your weight (pounds): ";
-	cin >> weight;
-
-	cout << "\nPlease, type in your height (inches): ";
-	cin >> height;
-
-	//Calculations
-	bmi = weight * (703 / pow(height, 2));
-
-	//Print
-	cout << "\n\nYour Body Mass Index (BMI) is: " <<bmi <<"\n";
-	string word = bmiResult(bmi);
-	cout << "According to your Body Mass Index (BMI) you're " << word << ".\n\n";
-}
 
 //BMR Calculator
 double bmrResult(string gender, double weight, double height, double age) {
