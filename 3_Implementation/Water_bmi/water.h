@@ -3,6 +3,13 @@
 #include<string.h>
 #include <math.h>
 
+typedef enum ret_code{
+    NULL_PTR = -1,   /** Error code for NULL pointer */
+    SUCCESS,         /** Value for Sucess */
+    NULL_PTR,   /** Error code for Null FILE Pointer */
+    INCONSISTENT_DATA /** Error Code for improper input data */
+    }ret_code_t;
+
 struct member
 {
 	int usr_id;

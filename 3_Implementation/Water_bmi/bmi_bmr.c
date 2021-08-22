@@ -1,11 +1,14 @@
 #include"water.h"
 #include<string.h>
 
-void calcBMI(struct member *p, int n) 
+ret_code_t calcBMI(struct member *p, int n) 
 {
 	//Formula --> BMI = weigh * (703 / (height^2)).
 	
 	//Variables
+    if(p==NULL)
+        return NULL_PTR;
+    
 	double bmi;
 	char word[20];
 	double weight, height;
@@ -45,10 +48,14 @@ void calcBMI(struct member *p, int n)
 		printf( "\n Your Body Mass Index (BMI) is:%lf \n",bmi);
 		printf("According to your Body Mass Index (BMI) you're %s\n","Obese");
 	}
+    return SUCCESS;
 }
 
-double calcBMR(struct member *p, int n) 
+ret_code_t calcBMR(struct member *p, int n) 
 {	
+    if(fp==NULL)
+        return NULL_PTR;
+    
 	//Variables
 	int g,a;
 	double weight,height,bmr;
@@ -76,5 +83,5 @@ double calcBMR(struct member *p, int n)
 	//Prin
 	printf( "You have a Basal Metabolic Rate (BMR) of:%lf ",bmr);
 	printf(" calories per day.\n");
-	return bmr;
+	return SUCCESS;
 }
