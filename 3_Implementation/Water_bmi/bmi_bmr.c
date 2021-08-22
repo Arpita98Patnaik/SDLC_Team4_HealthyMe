@@ -53,7 +53,7 @@ ret_code_t calcBMI(struct member *p, int n)
 
 ret_code_t calcBMR(struct member *p, int n) 
 {	
-    if(fp==NULL)
+    if(p==NULL)
         return NULL_PTR;
     
 	//Variables
