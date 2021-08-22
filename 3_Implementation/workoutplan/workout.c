@@ -121,7 +121,7 @@ void beginner()
     "Squats(low intensity)   25 min              100""\n"
     "Push-ups                20 count            140""\n"
     "=================================================================""\n"
-    "Please follow the workout plans for %d days\n\n",no_of_days);
+    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
     printf("%s",store_string);
     
     
@@ -139,7 +139,7 @@ void intermediate()
     "Push-ups                20 count            140""\n"
     "Threadmill              60 min              700""\n"
     "=================================================================""\n"
-    "Please follow the workout plans for %d days\n\n",no_of_days);
+    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
     printf("%s",store_string);
 
 }
@@ -159,7 +159,7 @@ void advanced()
     "Burpees                 60 min              680""\n"
     
     "=================================================================""\n"
-    "Please follow the workout plans for %d days\n\n",no_of_days);
+    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
     printf("%s",store_string);
 }
 
