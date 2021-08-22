@@ -20,13 +20,14 @@ endif
 
 # All test source files
 SRC = \
+src/bmi_bmr.c \
 src/dietPlan.c \
-src/Cal_Intake.c
+src/Cal_Intake.c \
 
 
 TEST_SRC = \
 test/unity.c \
-test/test_main.c\
+test/test_bmi_bmr.c\
 
 # All include folders with header files
 INC = \

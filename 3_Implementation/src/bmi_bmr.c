@@ -19,7 +19,6 @@ The formula used to calculate BMR is:
 */
 
 #include<stdio.h>
-
 #include<stdlib.h>
 #include<string.h>
 #include <math.h>
@@ -27,10 +26,6 @@ void calcBMI();
 const char* bmiResult(double bmi);
 double bmrResult(int gender, double weight, double height, double age);
 double calcBMR();
-
-
-
-
 
 void calcBMI() {
 	//Formula --> BMI = weigh * (703 / (height^2)).
@@ -41,7 +36,7 @@ void calcBMI() {
 	double bmi;
 	char word[20];
 	
-
+	printf("___________________________BMI Calculation_________________________________ ");
 	printf("\nEnter your weight (Kg): ");
 	scanf("%lf",&weight);
 
@@ -107,6 +102,7 @@ double calcBMR() {
 	double height;
 	double age;
 
+	printf("___________________________BMR Calculation_________________________________ ");
 	printf("Select gender: \n");
 	printf("1. Female\n");
 	printf("2. Male\n");
@@ -126,15 +122,15 @@ double calcBMR() {
 
 	//Print
 	double bmr = bmrResult(gender, weight, height, age);
-	printf( "You have a Basal Metabolic Rate (BMR) of:%lf ",bmr);
+	printf( "You have a Basal Metabolic Rate (BMR) of:%0.2f ",bmr);
 	printf(" calories per day.\n");
 	return bmr;
 }
 
 
 int main()
-{ calcBMI();
-  calcBMR();
-  return 0;
-
+{
+	calcBMI();
+	calcBMR();
+	return 0;
 }
