@@ -1,22 +1,16 @@
+#include<essentials.h>
 #include "dietPlan.h"
 #include "Cal_Intake.h"
 #include<stdio.h>
 #include<stdlib.h>
 int brkfst_limit=0,lunch_limit=0,snack_limit =0,dinner_limit =0;
 
-
-
-
-
-
-
-
-int mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
+ret_code_t mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
     int choice;
        
-    printf("________________________Choose your Meal plan_______________________\n");
-    printf("1. Fiesty Breakfast, Light lunch, Healthy dinner\n2.Healthy breakfast, Fiesty lunch, Light dinner\n3. Light Breakfast, Healthy lunch, Fiesty dinner\n");
+    printf("________________________Choose your Meal plan___________________________\n");
+    printf("1. Fiesty Breakfast, Light lunch, Healthy dinner\n2. Healthy breakfast, Fiesty lunch, Light dinner\n3. Light Breakfast, Healthy lunch, Fiesty dinner\n");
     fscanf(stdin,"%d",&choice);
         if(choice==1){
             return brkfst_priority(bmr,b_head,l_head,s_head,d_head);
@@ -30,11 +24,11 @@ int mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head
         else
         {
             printf("Choose a valid choice");
-            return 0;
+            return INCONSISTENT_DATA;
         }
 
 }
-int brkfst_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
+ret_code_t brkfst_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
     brkfst_limit = (40/100.0)*bmr;
     lunch_limit = (20 / 100.0)*bmr;
@@ -42,7 +36,7 @@ int brkfst_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d
     dinner_limit = (30/100.0)*bmr;
     return dietPlan(b_head,l_head,s_head,d_head); 
 }
-int lunch_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
+ret_code_t lunch_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
     brkfst_limit = (30/100.0)*bmr;
     lunch_limit = (40/100.0)*bmr;
@@ -50,7 +44,7 @@ int lunch_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_
     dinner_limit = (20/100.0)*bmr;
     return dietPlan(b_head,l_head,s_head,d_head); 
 }
-int dinner_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
+ret_code_t dinner_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
     brkfst_limit = (20/100.0)*bmr;
     lunch_limit = (30/100.0)*bmr;
@@ -60,17 +54,34 @@ int dinner_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d
 }
 
 
-int dietPlan(brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head){
-    printBrkfstList(b_head);
-    printDinnerList(d_head);
-    printSnacksList(s_head);
-    printLunchList(l_head);
+ret_code_t dietPlan(brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head){
+    ret_code_t ecc =0;
+    printf("\n______________________Breakfast options______________________");
+    ecc = printBrkfstList(b_head);
+    if(ecc==-1)
+                return ecc;
+    
+    printf("\n______________________Lunch options______________________");
+    ecc = printLunchList(l_head);
+    if(ecc==-1)
+                return ecc;
+    
+    printf("\n______________________Snack options______________________");
+    ecc = printSnacksList(s_head);
+    if(ecc==-1)
+                return ecc;
+    
+    printf("\n______________________Dinner options______________________");
+    ecc = printDinnerList(d_head);
+    if(ecc==-1)
+                return ecc;
+    return ecc;
 
 }
 
-int printBrkfstList(brkfst *head){
+ret_code_t printBrkfstList(brkfst *head){
     if(head ==NULL){
-        return -1;
+        return NULL_PTR;
     }
     
       brkfst* temp = head;
@@ -85,11 +96,11 @@ int printBrkfstList(brkfst *head){
             }
             temp = temp->next;
       }
-      return 1;
+      return SUCCESS;
 }
-int printLunchList(lunch *head){
+ret_code_t printLunchList(lunch *head){
     if(head ==NULL){
-        return -1;
+        return NULL_PTR;
     }
     
     lunch* temp = head;
@@ -104,11 +115,11 @@ int printLunchList(lunch *head){
             }
             temp = temp->next;
     }
-    return 1;
+    return SUCCESS;
 }
-int printSnacksList(snack *head){
+ret_code_t printSnacksList(snack *head){
     if(head ==NULL){
-        return -1;
+        return NULL_PTR;
     }
     
     snack* temp = head;
@@ -123,11 +134,11 @@ int printSnacksList(snack *head){
             }
             temp = temp->next;
     }
-    return 1;
+    return SUCCESS;
 }
-int printDinnerList(dinner *head){
+ret_code_t printDinnerList(dinner *head){
     if(head ==NULL){
-        return -1;
+        return NULL_PTR;
     }
     
     dinner* temp = head;
@@ -142,5 +153,5 @@ int printDinnerList(dinner *head){
             }
             temp = temp->next;
     }
-    return 1;
+    return SUCCESS;
 }

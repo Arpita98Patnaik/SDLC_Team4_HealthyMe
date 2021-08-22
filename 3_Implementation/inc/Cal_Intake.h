@@ -14,5 +14,4 @@
     int dinner_priority(int,brkfst*,lunch*,snack*,dinner*);
     int dietPlan(brkfst*,lunch*,snack*,dinner*);
 
-
 #endif   
