@@ -1,6 +1,7 @@
 #ifndef __DIET_PLAN_H__
     
     #define __DIET_PLAN_H__
+    #include<essentials.h>
     typedef struct brkfst{
         char name[50];
         int cal;
@@ -34,6 +35,8 @@
     
 
     dinner* makeDinnerList(char*,dinner*);
+
+    ret_code_t calorie(member*,int);
     
 
 
