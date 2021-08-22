@@ -1,22 +1,19 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
 
-void beginner();
-void intermediate();
-void advanced();
-
-
+#include "essentials.h"
+#include<workout.h>
+float max_reducible_weight;
 float bmi , reduce_weight,total_calories;
-int choice ,select; 
-char store_string[1000];
-
+int choice; 
 int no_of_days;
-void workout(float bmi)
+char store_string[1000];
+ret_code_t workout(member *p,int n)
 {
-    /*printf("enter bmi value\n");
-    scanf("%f",&bmi);
-    */
+    ret_code_t ecc = 0;
+    bmi=p->bmi;
+    if(bmi==0)
+    {
+        return INCONSISTENT_DATA;
+    }
     if(bmi<18.5)  // underweight
     {
         printf("You are Underweight\n");
@@ -34,15 +31,18 @@ void workout(float bmi)
     {
         printf("You are over weight\n");
         printf("Healthy BMI range should be 18.6 to 24.9\n");
-        printf("Please enter how many kilos you wish to reduce\n");
-        scanf("%f" , &reduce_weight);
+        double h=p->h;
+        max_reducible_weight=(p->w)-22*(h*h);
+        printf("Your maximum reducible weight is %f\n",max_reducible_weight);
+        printf("Please enter how many kilos you wish to reduce (in the range of 0 to %f)\n",max_reducible_weight);
+        scanf("%f" , &reduce_weight); 
+              
         if(reduce_weight==0)
         {
-            sprintf(store_string,"First step to lose Weight. Get and stay active!""\n"
-            "Thank you""\n");
+            sprintf(store_string,"First step to lose Weight. Get up and stay active!\"\"\n\"\"Thank you\"\"\n");
             printf("%s",store_string);
         }
-        else if(reduce_weight>=1 && reduce_weight<=20)
+        else if(reduce_weight>=1 && reduce_weight<=max_reducible_weight)
         {
         printf("Please select pace of workout\n");
         printf("1.Beginner (to burn 500 calories/day)\n2.Intermediate (to burn 1500 calories/day)\n3.Advanced (to burn 3000 calories/day)\n");
@@ -51,23 +51,29 @@ void workout(float bmi)
         {
             case 1:
             {
-                beginner();
+                ecc = beginner();
+                if(ecc!=SUCCESS)
+                    return ecc;
                 break;
             }
             case 2:
             {
-               intermediate();
+                ecc =intermediate();
+                if(ecc!=SUCCESS)
+                    return ecc;
                 break;
             }
             case 3:
             {
-                advanced();
+                ecc = advanced();
+                if(ecc!=SUCCESS)
+                    return ecc;
                 break;
             }
-            deafult :
+            default:
             {
                 printf("Please enter valid input\n");
-                break;
+                return INCONSISTENT_DATA ;
             }
         }
         }
@@ -75,40 +81,20 @@ void workout(float bmi)
         {
             sprintf(store_string,
             "==============================================================""\n"
-            "Please choose within the range of 0 to 20 kgs""\n"
-            
-            "Select""\n"
-            "1. To continue""\n"
-            "2. Exit""\n"
-            "==============================================================""\n");
+            "Please choose within the range of 0 to %d kgs""\n"
+            "==============================================================""n",max_reducible_weight);
             printf("%s",store_string);
-            scanf("%d",&select);
-            switch(select)
-            {
-                case 1:
-                {
-                    workout(bmi);
-                    break;
-                }
-                case 2:
-                {
-                    printf("Thank You\n");
-                    break;
-                }
-                default:
-                {
-                    printf("Invalid choice\n");
-                    break;
-                }
-            }
-            //workout(bmi);
+            
+            return INCONSISTENT_DATA;
+            
         }
         
         
     }
+    //return reduce_weight;
+return SUCCESS;
 }
-
-void beginner()
+ret_code_t beginner()
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
     
@@ -121,12 +107,15 @@ void beginner()
     "Squats(low intensity)   25 min              100""\n"
     "Push-ups                20 count            140""\n"
     "=================================================================""\n"
-    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
+    "Please follow the workout plans for %d days\n\n",no_of_days);
+   if(store_string==NULL)
+        return NULL_PTR;
     printf("%s",store_string);
+    return SUCCESS;
     
     
 }
-void intermediate()
+ret_code_t intermediate()
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
     
@@ -139,12 +128,14 @@ void intermediate()
     "Push-ups                20 count            140""\n"
     "Threadmill              60 min              700""\n"
     "=================================================================""\n"
-    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
+    "Please follow the workout plans for %d days\n\n",no_of_days);
+    if(store_string==NULL)
+        return NULL_PTR;
     printf("%s",store_string);
-
+    return SUCCESS;
 }
 
-void advanced()
+ret_code_t advanced()
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
    
@@ -159,14 +150,11 @@ void advanced()
     "Burpees                 60 min              680""\n"
     
     "=================================================================""\n"
-    "Please follow the workout plans for %d days to reduce %f Calories\n\n",no_of_days,total_calories);
+    "Please follow the workout plans for %d days\n\n",no_of_days);
+    if(store_string==NULL)
+        return NULL_PTR;
     printf("%s",store_string);
+    return SUCCESS;
 }
 
-int main()
-{
-    printf("enter bmi value\n");
-    scanf("%f",&bmi);
-    workout(bmi);
-    return 0;
-}
+
