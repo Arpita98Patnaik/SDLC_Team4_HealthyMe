@@ -1,6 +1,7 @@
 #include<essentials.h>
 #include "dietPlan.h"
 #include "Cal_Intake.h"
+#include "report_generator.h"
 #include<stdio.h>
 #include<stdlib.h>
 int brkfst_limit=0,lunch_limit=0,snack_limit =0,dinner_limit =0;
@@ -66,23 +67,24 @@ ret_code_t dietPlan(brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head){
     ret_code_t ecc =0;
     printf("\n______________________Breakfast options______________________");
     ecc = printBrkfstList(b_head);
-    if(ecc==-1)
+    if(ecc!=SUCCESS)
                 return ecc;
     
     printf("\n______________________Lunch options______________________");
     ecc = printLunchList(l_head);
-    if(ecc==-1)
+    if(ecc!=SUCCESS)
                 return ecc;
     
     printf("\n______________________Snack options______________________");
     ecc = printSnacksList(s_head);
-    if(ecc==-1)
+    if(ecc!=SUCCESS)
                 return ecc;
     
     printf("\n______________________Dinner options______________________");
     ecc = printDinnerList(d_head);
-    if(ecc==-1)
+    if(ecc!=SUCCESS)
                 return ecc;
+
     return ecc;
 
 }

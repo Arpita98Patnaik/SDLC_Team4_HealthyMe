@@ -155,6 +155,7 @@ ret_code_t advanced()
     if(store_string==NULL)
         return NULL_PTR;
     printf("%s",store_string);
+    
     return SUCCESS;
 }
 

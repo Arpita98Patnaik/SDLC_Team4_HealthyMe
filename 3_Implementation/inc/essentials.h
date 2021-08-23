@@ -19,6 +19,7 @@
             float total_w;
             float bmi;
             float bmr;
+            char *info;
         }member;
     
     typedef enum ret_code{
