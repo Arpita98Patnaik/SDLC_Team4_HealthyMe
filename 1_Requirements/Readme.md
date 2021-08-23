@@ -77,7 +77,7 @@ Based on the above data we can estimate a cost of at least **$88,250** for one p
 ##  Low level Requirements:
 | ID | Description | Status (Implemented/Future)|
 |:--|:----------------------------------|:-------------------|
-| LR.01 | User should be able to enter weight, height, age and gender to calculate BMI| - |
+| LR.01 | User should be able to enter weight, height, age and gender to calculate BMI and BMR| - |
 | LR.02 | User should be able to select SI/Imperial units as per their requirement| - |
 | LR.03 | User should be able to enter the foods they had for calorie calculation| - |
 | LR.04 | System should allow manual entering of the calories consumed by the user| - |
