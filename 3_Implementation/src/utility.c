@@ -6,6 +6,8 @@
 #include<workout.h>
 ret_code_t utility(int choice,member *ptr, int n){
     ret_code_t ecc = 0; 
+    if(ptr==NULL)
+        return NULL_PTR;
     switch(choice){
         case 1:                     
             ecc = calcBMI(ptr,n);

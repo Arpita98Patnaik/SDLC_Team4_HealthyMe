@@ -7,11 +7,19 @@ int brkfst_limit=0,lunch_limit=0,snack_limit =0,dinner_limit =0;
 
 ret_code_t mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
 {
+    if (bmr <1)
+    {
+        return INCONSISTENT_DATA;
+    }
+    if ((b_head==NULL)| (l_head==NULL)| (s_head==NULL)|(d_head==NULL))
+    {
+        return NULL_PTR;
+    }
     int choice;
        
     printf("________________________Choose your Meal plan___________________________\n");
     printf("1. Fiesty Breakfast, Light lunch, Healthy dinner\n2. Healthy breakfast, Fiesty lunch, Light dinner\n3. Light Breakfast, Healthy lunch, Fiesty dinner\n");
-    scanf("%d",&choice);
+    fscanf(stdin,"%d",&choice);
         if(choice==1){
             return brkfst_priority(bmr,b_head,l_head,s_head,d_head);
             }
