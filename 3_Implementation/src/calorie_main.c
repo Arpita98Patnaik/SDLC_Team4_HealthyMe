@@ -5,6 +5,9 @@
 #include<Cal_Intake.h>
 
 ret_code_t calorie(member *p,int n){
+    if(p==NULL){
+        return NULL_PTR;
+    }
     char *path_b = "res\\brkfst.csv";
     char *path_l = "res\\lunch.csv";
     char *path_s = "res\\snacks.csv";
