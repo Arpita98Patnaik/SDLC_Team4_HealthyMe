@@ -21,9 +21,14 @@
 | LT-3.1 | Check if the system considers workout for water intake calculations | :---- | :---- | :---- | technical |
 | LT-4.1 | Check if the user is able to provide the workout intensity choices | :---- | :---- | :---- | technical |
 | LT-4.2 | Check if the user is able to enter the amount of weight needed to shed | :---- | :---- | :---- | technical |
-| LT-5.1 | - | :---- | :---- | :---- | technical |
-| LT-6.1 | - | :---- | :---- | :---- | technical |
-| LT-7.1 | - | :---- | :---- | :---- | technical |
+| LT-5.1 | Check if the user has chosen the correct index and choise or not | Incorrect entry | NULL | Incorrect entry | technical |
+| LT-5.2 | Check if the user has selected the correct choise | CalcBMI,CalcBMR functions called | 1 | Calculate BMI and BMR values | technical |
+| LT-5.3 | Check if the user has selected the correct choise | CalcBMR,calorie functions called | 2 | Calculate BMR and calorie values | technical |
+| LT-5.4 | Check if the user has selected the correct choise | calcwaterquant and workoutcheck functions called | 3 | Calculate water quantity and workout of user | technical |
+| LT-5.5 | Check if the user is able to select the correct choise | CalcBMI,CalcBMR functions called | 4 | Calculate BMI and BMR values | technical |
+| LT-5.6 | Check if the user user had chosen a choise which is not present | Incorrect entry | 6 | Incorrect entry | technical |
+| LT-6.1 | Check if the user had not sent data | NULL | NULL | Incorrect entry | technical |
+
 
 
 
