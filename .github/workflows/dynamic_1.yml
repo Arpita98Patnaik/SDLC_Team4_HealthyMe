@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: CodeQuality Dynamic Code Analysis Valgrind
 on:
   push:
@@ -21,27 +20,3 @@ jobs:
       run: make -C 3_Implementation/ all
     - name: Valgrid
       run: valgrind ./3_Implementation/build/HealthyMe.out
-=======
-name: CodeQuality Dynamic Code Analysis Valgrind
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  test:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: apt install dependency
-      run: |
-        sudo apt-get -y install valgrind
-        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
-    - name: make test
-      run: make -C 3_Implementation/ all
-    - name: Valgrid
-      run: valgrind ./3_Implementation/build/HealthyMe.out
->>>>>>> c80e01c07c3740a82133b5ea9a20a168220843fe

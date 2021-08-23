@@ -11,7 +11,7 @@ ret_code_t mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner 
        
     printf("________________________Choose your Meal plan___________________________\n");
     printf("1. Fiesty Breakfast, Light lunch, Healthy dinner\n2. Healthy breakfast, Fiesty lunch, Light dinner\n3. Light Breakfast, Healthy lunch, Fiesty dinner\n");
-    fscanf(stdin,"%d",&choice);
+    scanf("%d",&choice);
         if(choice==1){
             return brkfst_priority(bmr,b_head,l_head,s_head,d_head);
             }

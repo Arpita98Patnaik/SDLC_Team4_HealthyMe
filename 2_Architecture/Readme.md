@@ -5,6 +5,7 @@
 ![Architectural diagram](https://user-images.githubusercontent.com/57947483/130231221-582b513c-f0a9-404a-9865-d7efce31a989.png)
 
 **Use Case diagram**
+![UseCase](https://github.com/99Pp/SDLC_Team4_HealthyMe/blob/main/2_Architecture/use%20case%20diag.png)
 
 ## Low Level Design 
 
