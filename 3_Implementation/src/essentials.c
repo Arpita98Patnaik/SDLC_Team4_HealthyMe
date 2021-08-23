@@ -33,10 +33,10 @@ ret_code_t newmember(struct member *p, int n ){
 		printf("Enter your weight in Kgs:");
 		scanf("%f",&weight);
 		(p+n)->w = weight;
-		printf("Enter height in meters:");
+		printf("Enter height in centimeters :");
 		scanf("%f",&height);
 		(p+n)->h = height;
-        if(weight>150 || height>250)
+        if(weight>150.0 || height>250.0)
         {
             return INCONSISTENT_DATA;
         }
