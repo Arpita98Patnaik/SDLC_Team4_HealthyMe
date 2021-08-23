@@ -76,7 +76,11 @@ ret_code_t utility(int choice,member *ptr, int n){
             
             //  report_builder(ptr,string_module);  //string module to be sent
             break;
-
+        case 6 :
+            ecc = displaymemberdetails(ptr,n);
+            if(ecc!=SUCCESS)
+                return ecc;
+            break;
         default:
             printf("Incorrect Entry\n");
             return INCONSISTENT_DATA;

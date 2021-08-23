@@ -11,8 +11,8 @@
 
 Build | Code Quality | Unity | Git Inspector | Code coverage
 -|-|-|-|-
-[![C CI Linux]()]()| [![Codacy Badge]()]()|[![Unit Testing - Unity]()]()|[![Contribution Check - Git Inspector]()]()|[![CI-Coverage]()]()
-|[![C CI Windows]()]()|[![Static Code Analysis Cppcheck]()]()
+[[![C/C++ CI](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/c-build.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/c-build.yml)| [![Codacy Badge]()]()|[![Unit Testing - Unity]()]()|[![Contribution Check - Git Inspector](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/contribuitions.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/contribuitions.yml)]| [![CI-Coverage]()]()
+||[![Static Code Analysis Cppcheck]()]()
 ||[![Dynamic Code Analysis Valgrind]()]()
 ||[![Code-Inspector Grade]()]()
 ||[![Code-Inspector Score]()]()
