@@ -8,14 +8,15 @@
 
 int main(){
     member ptr1[MAX_SIZE];
-	int index = 0, x = 0, mbid;
+	int index = -1, x = 0, mbid;
     ret_code_t ecc = 0;
-	
+	while(x!=3){
 		int choice;
 		printf("     Healthy  Me   \n");
 		printf(" -------------------------------------------------------------------\n");
 		printf("               1- New User           \n");
 		printf("               2- Existing User          \n");
+		printf("               3- Exit          \n");
 		printf(" ------------------------------------------------------------------ \n");	
 		printf("  Enter your choice: ");
 		scanf("%d",&choice);
@@ -25,8 +26,7 @@ int main(){
 			case 1:
 				if(index<MAX_SIZE)
 				{
-					ecc = newmember(ptr1,index);
-					
+					ecc = newmember(ptr1,++index);
 					if(ecc!=SUCCESS)
 						return ecc;
 					printf("               Select one of your choices                           \n");
@@ -43,7 +43,6 @@ int main(){
                     ecc = utility(choice,ptr1,index);
 					if(ecc!=SUCCESS)
 						return ecc;
-					index++;
 				}
 				
 				break;
@@ -81,12 +80,12 @@ int main(){
 							return ecc;
 						break;
 				}
-		  	default:
-		  		printf("Incorrect Entry\n");
-            	return INCONSISTENT_DATA;
+		  	// default:
+		  	// 	printf("Incorrect Entry\n");
+            // 	return INCONSISTENT_DATA;
             
 		  }
 	
-		  
+	}
 	return SUCCESS;
 }

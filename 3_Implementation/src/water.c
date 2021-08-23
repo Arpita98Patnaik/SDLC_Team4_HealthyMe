@@ -37,7 +37,7 @@ ret_code_t calcwaterquant( member *p, int n )
 
 	int hr=0, min=0, t=0;
 	float wt, q; 
-	//printf("Calculate Water!!!!!\n");
+	printf("Calculate Water!!!!!\n");
 	if((p+n)->unit == 1)
 	{
 		wt = (p+n)->w * 2.2046;
@@ -47,6 +47,7 @@ ret_code_t calcwaterquant( member *p, int n )
 		min = (p+n)->time[1];
 		t = (hr*60) + min;
 		(p+n)->total_w = (q + ((t/30)*12)) * 0.0295735;
+		printf("Recomended Water-intake: %f\n",(p+n)->total_w);
 	}
 	else
 	{
@@ -59,6 +60,7 @@ ret_code_t calcwaterquant( member *p, int n )
 		//sscanf((p+n)->time, "%d:%d", &hr,&min);
 		t = (hr*60) + min;
 		(p+n)->total_w = (q + ((t/30)*12));
+		printf("Recomended Water-intake: %f\n",(p+n)->total_w);
 	}
     return SUCCESS;	
 }

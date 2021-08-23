@@ -18,7 +18,7 @@
             int time[2];
             float total_w;
             float bmi;
-            int bmr;
+            float bmr;
         }member;
     
     typedef enum ret_code{

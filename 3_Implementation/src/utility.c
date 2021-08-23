@@ -28,13 +28,16 @@ ret_code_t utility(int choice,member *ptr, int n){
                 return ecc;
             break;
         case 3:
+            ecc =  workoutcheck( ptr,n );
+            if(ecc!=SUCCESS)
+                return ecc;
+
+            
             ecc =  calcwaterquant(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
             
-            ecc =  workoutcheck( ptr,n );
-            if(ecc!=SUCCESS)
-                return ecc;
+            
             //  report_builder(ptr,string_module);  //string module to be sent
             break;
 
@@ -66,13 +69,15 @@ ret_code_t utility(int choice,member *ptr, int n){
             if(ecc!=SUCCESS)
                 return ecc;
 
+            ecc =  workoutcheck( ptr,n );
+            if(ecc!=SUCCESS)
+                return ecc;
+            
             ecc =  calcwaterquant(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
             
-            ecc =  workoutcheck( ptr,n );
-            if(ecc!=SUCCESS)
-                return ecc;
+            
             
             //  report_builder(ptr,string_module);  //string module to be sent
             break;

@@ -79,6 +79,9 @@ ret_code_t displaymemberdetails( struct member *p, int n)
 		printf("Units used: Imperial units\n");
 	}
 	printf("Weight: %f\n",(p+n)->w);
+	printf("BMI: %lf\n",(p+n)->bmi);
+	printf("BMR: %lf\n",(p+n)->bmr);
+	
 	printf("Workout duration: %d:%d\n",(p+n)->time[0],(p+n)->time[1]);
 	printf("Recomended Water-intake: %f\n",(p+n)->total_w);
     return SUCCESS;

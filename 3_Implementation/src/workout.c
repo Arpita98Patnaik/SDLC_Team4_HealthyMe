@@ -9,7 +9,8 @@ char store_string[1000];
 ret_code_t workout(member *p,int n)
 {
     ret_code_t ecc = 0;
-    bmi=p->bmi;
+    bmi=(p+n)->bmi;
+    printf("%lf",bmi);
     if(bmi==0)
     {
         return INCONSISTENT_DATA;
@@ -32,7 +33,7 @@ ret_code_t workout(member *p,int n)
         printf("You are over weight\n");
         printf("Healthy BMI range should be 18.6 to 24.9\n");
         double h=p->h;
-        max_reducible_weight=(p->w)-22*(h*h);
+        max_reducible_weight=(p->w)-22*(h*h)/10000.0;
         printf("Your maximum reducible weight is %f\n",max_reducible_weight);
         printf("Please enter how many kilos you wish to reduce (in the range of 0 to %f)\n",max_reducible_weight);
         scanf("%f" , &reduce_weight); 

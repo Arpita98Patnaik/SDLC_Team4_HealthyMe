@@ -22,6 +22,7 @@ ret_code_t calcBMI(struct member *p, int n)
             return INCONSISTENT_DATA;
         }
 		bmi = (weight /(height*height))*10000;
+		(p+n)->bmi = bmi;
 	}
 	else
 	{
@@ -32,6 +33,7 @@ ret_code_t calcBMI(struct member *p, int n)
             return INCONSISTENT_DATA;
         }
 		bmi = (weight /(height*height))*10000;
+		(p+n)->bmr = bmi;
 	}
 	
 	if (bmi < 18.5) 

@@ -32,9 +32,11 @@ ret_code_t calcBMR(member *p, int n)
 
 	if (g == 1) {
 		bmr = (10*weight) + (6.25*height) - (5*a) - 161;
+		(p+n)->bmr = bmr;
 	}
 	else if (g == 2) {
 		bmr = (10*weight) + (6.25 * height) - (5*a) + 5;
+		(p+n)->bmr = bmr;
 	}
 	//Print
 	printf( "You have a Basal Metabolic Rate (BMR) of:%lf ",bmr);

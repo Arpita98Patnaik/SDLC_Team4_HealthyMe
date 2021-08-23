@@ -32,7 +32,7 @@ src/utility.c
 
 TEST_SRC = \
 test/unity.c \
-test/test_bmi_bmr.c\
+test/test_water.c\
 
 # All include folders with header files
 INC = \
