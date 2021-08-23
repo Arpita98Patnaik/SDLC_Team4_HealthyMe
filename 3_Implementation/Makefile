@@ -20,10 +20,15 @@ endif
 
 # All test source files
 SRC = \
-src/bmi_bmr.c \
+src/bmi.c \
+src/bmr.c \
+src/essentials.c \
 src/dietPlan.c \
 src/Cal_Intake.c \
-
+src/calorie_main.c \
+src/water.c \
+src/workout.c\
+src/utility.c
 
 TEST_SRC = \
 test/unity.c \
