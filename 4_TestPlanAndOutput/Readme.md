@@ -21,7 +21,10 @@
 | LT-3.1 | Check if the system considers workout for water intake calculations | :---- | :---- | :---- | technical |
 | LT-4.1 | Check if the user is able to provide the workout intensity choices | :---- | :---- | :---- | technical |
 | LT-4.2 | Check if the user is able to enter the amount of weight needed to shed | :---- | :---- | :---- | technical |
-| LT-5.1 | - | :---- | :---- | :---- | technical |
+| LT-5.1 | Check if the system accurately accounts the units used SI/Imperial | :---- | :---- | :---- | technical |
+| LT-5.2 | Check if the system can keep a track of user workout duration | :---- | :---- | :---- | technical |
+| LT-5.3 | Estimate recommended water intake for the day based on user data | :---- | :---- | :---- | technical |
+| LT-5.4 | Ensure a record of the water data estimated is kept track of | :---- | :---- | :---- | technical |
 | LT-6.1 | - | :---- | :---- | :---- | technical |
 | LT-7.1 | - | :---- | :---- | :---- | technical |
 
