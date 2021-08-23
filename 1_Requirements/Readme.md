@@ -78,16 +78,18 @@ Based on the above data we can estimate a cost of at least **$88,250** for one p
 | ID | Description | Status (Implemented/Future)|
 |:--|:----------------------------------|:-------------------|
 | LR.01 | User should be able to enter weight, height, age and gender to calculate BMI| - |
-| LR.02 | User should be able to enter the foods they had for calorie calculation| - |
-| LR.03 | System should allow manual entering of the calories consumed by the user| - |
-| LR.04 | System should be able to plan a diet chart based on the calorie requirements for a specific BMI| - |
-| LR.05 | System should be able to planout a workout regime based on users body type| - |
-| LR.06 | System should be allow the user to choose diets and workouts based on their body type and requirements| - |
-| LR.07 | System should be able to provide long and short term workput plans based on user's workout intensity choice| - |
-| LR.08 | User should be able to enter the water intake they have had for a day| - |
-| LR.09 | System should be able to output the water intake user must have in a day| - |
-| LR.10 | User should be able to keep track of their health history| Future |
-| LR.11 | User should be able to view and track the records on a dedicated mobile application| Future |
-| LR.12 | Enhanced database for different varieties of foods & drinks and the calories it contains| Future |
-| LR.13 | System should be able to give notification alerts to remind the user to drink more water| Future |
-| LR.14 | System should provide the nutritional contents and calories of food items consumed across the world| Future |
+| LR.02 | User should be able to select SI/Imperial units as per their requirement| - |
+| LR.03 | User should be able to enter the foods they had for calorie calculation| - |
+| LR.04 | System should allow manual entering of the calories consumed by the user| - |
+| LR.05 | System should be able to plan a diet chart based on the calorie requirements for a specific BMI| - |
+| LR.06 | System should be able to planout a workout regime based on users body type| - |
+| LR.07 | System should be allow the user to choose diets and workouts based on their body type and requirements| - |
+| LR.08 | System should be able to provide long and short term workput plans based on user's workout intensity choice| - |
+| LR.09 | User should be able to enter the water intake they have had for a day| Implemented |
+| LR.10 | User should be able to account for water lost due to workout sessions| Implemented |
+| LR.11 | System should be able to output the water intake user must have in a day| Implemented |
+| LR.12 | User should be able to keep track of their health history| Future |
+| LR.13 | User should be able to view and track the records on a dedicated mobile application| Future |
+| LR.14 | Enhanced database for different varieties of foods & drinks and the calories it contains| Future |
+| LR.15 | System should be able to give notification alerts to remind the user to drink more water| Future |
+| LR.16 | System should provide the nutritional contents and calories of food items consumed across the world| Future |
