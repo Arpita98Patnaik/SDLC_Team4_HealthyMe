@@ -13,7 +13,7 @@
 |:-------------------|:--------------------------------------|
 | Build |[![C/C++ CI](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/c-build.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/c-build.yml)|
 | Code quality |[![CI-Coverage](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/gcov.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/gcov.yml) [![CodeQuality Dynamic Code Analysis Valgrind](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/dynamic_1.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/dynamic_1.yml) [![cppcheck-action](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/cppcheck.yml)|
-| Unity |  |
+| Unity |[![Unit Testing - Unity](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/uni-test.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/uni-test.yml)|
 | Git Inspector |[![Contribution Check - Git Inspector](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/contribuitions.yml/badge.svg)](https://github.com/99Pp/SDLC_Team4_HealthyMe/actions/workflows/contribuitions.yml)|
 
 ## Folder Structure
