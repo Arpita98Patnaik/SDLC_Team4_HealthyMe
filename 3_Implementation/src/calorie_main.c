@@ -27,6 +27,6 @@ ret_code_t calorie(member *p,int n){
     d_head = makeDinnerList(path_d,d_head);
 
 
-    return mealchoice(bmr,b_head,l_head,s_head,d_head);
+    return mealchoice(bmr,b_head,l_head,s_head,d_head,p,n);
     
 }
