@@ -24,7 +24,8 @@ ret_code_t newmember(struct member *p, int n ){
 	
     printf("Select a unit of your preference:\n");
 	printf("   1. SI units    ");
-	printf("   2. Imperial system    ");
+	printf("   2. Imperial system    \n");
+	printf("Enter your choice: ");
 	scanf("%d",&ch_u);
 	
     if(ch_u == 1)
@@ -66,7 +67,7 @@ ret_code_t displaymemberdetails( struct member *p, int n)
     if(p==NULL)
         return NULL_PTR;
 
-	printf("-------------------------------------------------\n");
+	printf("------------------Member Details-----------------------\n");
 	printf("Member ID: %d\n",(p+n)->usr_id);
 	printf("Member Name: %s\n",(p+n)->name);
 	printf("Member age: %d\n",(p+n)->age);
@@ -84,5 +85,7 @@ ret_code_t displaymemberdetails( struct member *p, int n)
 	
 	printf("Workout duration: %d:%d\n",(p+n)->time[0],(p+n)->time[1]);
 	printf("Recomended Water-intake: %f\n",(p+n)->total_w);
+	printf("-----------------------------------------------------------\n");
+
     return SUCCESS;
 }

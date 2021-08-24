@@ -42,30 +42,37 @@ ret_code_t calcBMI(struct member *p, int n)
 	if (bmi < 18.5) 
 	{
 		char storeString[100];
+		printf("------------------------------------------------------------------------------------\n");
 		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Underweight");
 		printf("%s",storeString);
+		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	else if (bmi >= 18.5 && bmi <= 24.9) 
 	{
 		char storeString[100];
+		printf("------------------------------------------------------------------------------------\n");
 		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Normal Weighted");
 		printf("%s",storeString);
+		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	else if (bmi >= 25 && bmi <= 29.9) 
 	{
 		char storeString[100];
+		printf("------------------------------------------------------------------------------------\n");
 		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Overweight");
 		printf("%s",storeString);
+		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	else if (bmi >= 30) 
 	{
 		char storeString[100];
-		
+		printf("------------------------------------------------------------------------------------\n");
 		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Obese");
 		printf("%s",storeString);
+		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
 
 	}
