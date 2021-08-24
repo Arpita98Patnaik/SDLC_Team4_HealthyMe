@@ -1,6 +1,7 @@
 #include<essentials.h>
 #include<water.h>
 #include "report_generator.h"
+#include<stringBuilder.h>
 
 ret_code_t workoutcheck(member *p,int n){
     if(p==NULL)
@@ -49,7 +50,9 @@ ret_code_t calcwaterquant( member *p, int n )
 		min = (p+n)->time[1];
 		t = (hr*60) + min;
 		(p+n)->total_w = (q + ((t/30)*12)) * 0.0295735;
-		printf("Recomended Water-intake: %f\n",(p+n)->total_w);
+		char storeString[100];
+		sprintf(storeString,"Recomended Water-intake: %f\n",(p+n)->total_w);
+		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	else
 	{
@@ -62,7 +65,9 @@ ret_code_t calcwaterquant( member *p, int n )
 		//sscanf((p+n)->time, "%d:%d", &hr,&min);
 		t = (hr*60) + min;
 		(p+n)->total_w = (q + ((t/30)*12));
-		printf("Recomended Water-intake: %f\n",(p+n)->total_w);
+		char storeString[100];
+		sprintf(storeString,"Recomended Water-intake: %f\n",(p+n)->total_w);
+		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	
 
