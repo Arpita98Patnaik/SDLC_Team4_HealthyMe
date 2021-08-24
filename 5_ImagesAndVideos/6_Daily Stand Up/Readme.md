@@ -20,7 +20,7 @@
 | | 99005690|Paras  Panda |High level design diagram| Completed 
 | | 99005596|Pallavi  Sharma |UML diagram for Calorie Intake, Use Case diagram| Completed 
 | | 99005590|Ajay  Victor |UML diagram for Water module| Completed
-| | 99005608|Manasa  K |UML diagarm for workout module| Completed  
+| | 99005608|Manasa  K |Study on calorie burn , UML diagarm for workout module| Completed  
 | Day 3 | 99005666|Archana R Bailkeri |Workout module| Completed 
 | | 99005586|Jenikaben Rajendrakumar Patel |File Hanling| Completed 
 | | 99005387|Varna  M |BMI and BMR module| Completed
