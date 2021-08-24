@@ -15,7 +15,10 @@
 | Test ID | Description | Exp o/p | Exp i/p | Actual o/p | Type of test |
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | LT-1.1 | Check if user is able to choose between Imperial and SI unit system | SI system | Selects 1 | Data in SI system | technical |
-| LT-1.2 | Check if user is alerted for improper inputs | Incorrect Entry | NULL | Incorrect entry| technical |
+| LT-1.2 | Check if user is alerted when height or weight exceeds the limit given | Inconsistent Data | Weight 1200kg | Inconsistent Data| technical |
+| LT-1.3 | Check if user falls under correct weight category for BMI index | Overweight | 28 | Overweight| technical |
+| LT-1.4 | Check if user is able to choose gender | Female | Selects 1 | Female| technical |
+| LT-1.5 | Check if user is alerted when weight or height exceeds limit | Inconsistent Data | Weight 1200 kg | Inconsisttent Data| technical |
 | LT-2.1 | Check if the system correctly outputs diet choices below calorie intake specified | Expected output was obtained | User's choice | Expected output was obtained | technical |
 | LT-2.2 | Check if the user is alerted of the weight category they belong to | User's weight category | User data | Expected output was obtained | technical |
 | LT-3.1 | Check if the system accurately accounts the units used SI/Imperial | BMI and BMR values in respective units | User's choice | Expected output was obtained | technical |
