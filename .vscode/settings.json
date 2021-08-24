@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "problems.showCurrentInStatus": true,
     "files.associations": {
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "report_generator.h": "c",
+        "essentials.h": "c"
     }
 }
