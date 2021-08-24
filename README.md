@@ -45,5 +45,11 @@ PS No. |  Name  |    Features    | Issues Raised |Issues Resolved|#Test Cases|# 
 
 ## Challenges Faced and How Was It Overcome
 
-1. '''
-    * ''''''''
+1. Selection of common programming language
+    * With the amount of varied expertise brought in by the team  setting on a common language was challenging. We finally settled on C programming.
+2. Integration of developed modules
+    * Integration of individual modules was challenging as each member had their own approach and comming up with a common structure based approach was both challenging and time consuming.
+3. Testing of modules
+    * Testing of each individual modules and also ensuring that each function adhered to the common structure format required re-work on everyone's part.
+4. Setting up of Git workflows  
+    * Setting up of individual workflows for the various batches and ensuring the required criteria was met required bug fixes and improvement on code quality.
