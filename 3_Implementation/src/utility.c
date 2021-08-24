@@ -7,7 +7,7 @@
 #include<report_generator.h>
 
 ret_code_t utility(int choice,member *ptr, int n){
-    ret_code_t ecc = 0; 
+    ret_code_t ecc = SUCCESS; 
     int option;
 
     if(ptr==NULL)

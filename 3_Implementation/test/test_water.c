@@ -160,7 +160,7 @@ int main(void)
   UNITY_BEGIN();
 
   /* Run Test functions */
-  // RUN_TEST(L_13);
+  RUN_TEST(L_13);
   // RUN_TEST(L_15);
   RUN_TEST(test_utility);
 

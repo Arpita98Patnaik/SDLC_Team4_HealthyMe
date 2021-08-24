@@ -8,10 +8,10 @@ ret_code_t calorie(member *p,int n){
     if(p==NULL){
         return NULL_PTR;
     }
-    char *path_b = "res\\brkfst.csv";
-    char *path_l = "res\\lunch.csv";
-    char *path_s = "res\\snacks.csv";
-    char *path_d = "res\\dinner.csv";
+    char path_b[20] = "brkfst.csv";
+    char path_l[20] = "lunch.csv";
+    char path_s[20] = "snacks.csv";
+    char path_d[20] = "dinner.csv";
     int bmr = (p+n)->bmr;
 
     brkfst *b_head = NULL;

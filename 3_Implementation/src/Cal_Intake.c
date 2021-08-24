@@ -65,7 +65,7 @@ ret_code_t dinner_priority(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,di
 
 
 ret_code_t dietPlan(brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head,member *p,int n){
-    ret_code_t ecc =0;
+    ret_code_t ecc =SUCCESS;
     
     ecc = printBrkfstList(b_head,p,n);
     if(ecc!=SUCCESS)

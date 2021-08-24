@@ -10,7 +10,7 @@ char store_string[1000];
 char *info; 
 ret_code_t workout(member *p,int n)
 {
-    ret_code_t ecc = 0;
+    ret_code_t ecc = SUCCESS;
     bmi=(p+n)->bmi;
     printf("%lf",bmi);
     if(bmi==0)
