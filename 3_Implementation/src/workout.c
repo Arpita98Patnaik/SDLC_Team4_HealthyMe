@@ -1,11 +1,13 @@
-
 #include "essentials.h"
 #include<workout.h>
+#include<stringBuilder.h>
+#include<report_generator.h>
 float max_reducible_weight;
 float bmi , reduce_weight,total_calories;
 int choice; 
 int no_of_days;
 char store_string[1000];
+char *info; 
 ret_code_t workout(member *p,int n)
 {
     ret_code_t ecc = 0;
@@ -22,6 +24,18 @@ ret_code_t workout(member *p,int n)
         printf("Please increase the calorie intake\n");
         printf("Perform yoga for 30 minutes\n");
         printf("Perform low intensity push-ups and weight lifting under the doctor guidance \n");
+        info = addToString(info,"You are Underweight\nHealthy BMI range should be 18.6 to 24.9\nPlease increase the calorie intake\nPerform yoga for 30 minutes\nPerform low intensity push-ups and weight lifting under the doctor guidance \n");
+        int option;
+        char *info;
+        printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+        scanf("%d", &option);
+        if (option==1)
+        {
+            report_builder(p,info);
+        }
+
+    return SUCCESS;
+        report_builder(p,info);
                 
     }
     else if(bmi>=18.5 && bmi<=24.9) // normal weight
