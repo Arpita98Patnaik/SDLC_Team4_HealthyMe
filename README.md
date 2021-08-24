@@ -41,7 +41,7 @@ PS No. |  Name  |    Features    | Issues Raised |Issues Resolved|#Test Cases|# 
 99005690|Paras  Panda|Code Integration , Bug Fix , Workflows Makefile|3|2|2|2|
 99005596|Pallavi  Sharma|Calorie module and respective test cases,Uses case Diagrams|1|2|2|2|
 99005590|Ajay  Victor|Water Intake Module,Unified Data Structure to be used by all modules|2|3|2|2|
-99005608|Manasa  K|Made the flowchart for Workout Module and  Improved and key elements in the code |*|2|*|*|
+99005608|Manasa  K|Made the flowchart for Workout Plan and  Improved and development of Workout module |*|2|*|*|
 
 ## Challenges Faced and How Was It Overcome
 
