@@ -19,15 +19,15 @@
 | LT-1.3 | Check if user falls under correct weight category for BMI index | Overweight | 28 | Overweight| technical |
 | LT-1.4 | Check if user is able to choose gender | Female | Selects 1 | Female| technical |
 | LT-1.5 | Check if user is alerted when weight or height exceeds limit | Inconsistent Data | Weight 1200 kg | Inconsisttent Data| technical |
-| LT-2.1 | Check if the system correctly outputs diet choices below calorie intake specified | Expected output was obtained | User's choice | Expected output was obtained | technical |
-| LT-2.2 | Check if the user is alerted of the weight category they belong to | User's weight category | User data | Expected output was obtained | technical |
-| LT-3.1 | Check if the system accurately accounts the units used SI/Imperial | BMI and BMR values in respective units | User's choice | Expected output was obtained | technical |
-| LT-3.2 | Check if the system can keep a track of user workout duration | Expected output was obtained | User data | Expected output was obtained | technical |
-| LT-3.3 | Estimate recommended water intake for the day based on user data | Expected output was obtained | User data | Expected output was obtained | technical |
-| LT-3.4 | Ensure a record of the water data estimated is kept track of | Expected output was obtained | User data | Expected output was obtained | technical |
-| LT-4.1 | Check if the user is able to provide the workout intensity choices | Expected output was obtained | User's choice | Expected output was obtained | technical |
-| LT-4.2 | Check if the system is able to provide the maximum range of weight needed to shed by the user | Expected output was obtained | User data | Expected output was obtained | technical |
-| LT-5.1 | Check if the user has chosen the correct index and choice or not | Incorrect entry | NULL | Incorrect entry | technical |
+| LT-2.1 | Check if the system correctly outputs diet choices below calorie intake specified | Food items below 1200 cal should be listed | 1200 cal | Food items below 1200 cal is listed | technical |
+| LT-2.2 | Check if the user is alerted of the weight category they belong to | Overweight | BMI is 40 | Overweight | technical |
+| LT-3.1 | Check if the system accurately accounts the units used SI/Imperial | System allows user to enter data in SI unit system | selects 1 | Enters data in SI unit system | technical |
+| LT-3.2 | Check if the system can keep a track of user workout duration | Splits hours and minutes and passes values for calculation to the next module | Enters 1:20 | Splits hours and minutes | technical |
+| LT-3.3 | Estimate recommended water intake for the day based on user data | Water intake should be 2.4 L | User's BMI is 22.6 and selects NO to workout | Water intake is be 2.4 L | technical |
+| LT-3.4 | Allow user to enter their workout status before water intake calculation | Water Intake should be increased to account for the water loss during workout | Selects YES to workout | EWater Intake is be increased to account for the water loss during workout | technical |
+| LT-4.1 | Check if the user is able to provide the workout intensity choices | User is healthy, no workout plan should be created | User's BMI is 22.6 | No workout plan created | technical |
+| LT-4.2 | Check if the system is able to provide the maximum range of weight needed to shed by the user | Maximum weight to be shed by user should be 38 Kgs | User's BMI is 37.1 | User is asked to reduce weight upto 38 Kgs only| technical |
+| LT-5.1 | Check if the user has chosen the correct index and choice or not | Incorrect entry | User enters ID o instead of 0 | Incorrect entry | technical |
 | LT-5.2 | Check if the user has selected the correct choice | CalcBMI,CalcBMR functions called | 1 | Calculate BMI and BMR values | technical |
 | LT-5.3 | Check if the user has selected the correct choice | CalcBMR,calorie functions called | 2 | Calculate BMR and calorie values | technical |
 | LT-5.4 | Check if the user has selected the correct choice | calcwaterquant and workoutcheck functions called | 3 | Calculate water quantity and workout of user | technical |
