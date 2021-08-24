@@ -69,7 +69,7 @@ Based on the above data we can estimate a cost of at least **$88,250** for one p
 |:--|:----------------------------------|:-------------------|
 | HR.01 | User should be able to enter data in SI and Imperial system of units| Implemented |
 | HR.02 | System should be able to output personalized calorie intake | Implemented |
-| HR.03 | System should be able to output personalized workout routine | - |
+| HR.03 | System should be able to output personalized workout routine | Implemented |
 | HR.04 | System should be able to provide workout intensity choices to the user (Basic, Moderate, Extensive) | Implemented |
 | HR.05 | System should be able to provide the ideal water intake to the user | Implemented |
 | HR.06 | System should be able to provide a dedicated report in a text file format for each Health parameter | Implemented |
