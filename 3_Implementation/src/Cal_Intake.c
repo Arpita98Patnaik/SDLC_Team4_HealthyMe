@@ -99,6 +99,7 @@ ret_code_t printBrkfstList(brkfst *head,member *p,int n){
 
       char storeString[100];
       sprintf(storeString,"\n______________________Breakfast options______________________\n");
+      (p+n)->info = addToString((p+n)->info, storeString);
       printf("%s",storeString);
       while(temp!=NULL){
 
@@ -124,6 +125,7 @@ ret_code_t printLunchList(lunch *head,member *p,int n){
 
     char storeString[100];
     sprintf(storeString,"\n______________________Lunch options______________________\n");
+    (p+n)->info = addToString((p+n)->info, storeString);
     printf("%s",storeString);
     while(temp!=NULL){
             
@@ -147,6 +149,7 @@ ret_code_t printSnacksList(snack *head,member *p,int n){
 
     char storeString[100];
     sprintf(storeString,"\n______________________Snacks options______________________\n");
+    (p+n)->info = addToString((p+n)->info, storeString);
     printf("%s",storeString);
     while(temp!=NULL){
             
@@ -170,6 +173,7 @@ ret_code_t printDinnerList(dinner *head,member *p,int n){
 
     char storeString[300];
     sprintf(storeString,"\n______________________Dinner options______________________\n");
+    (p+n)->info = addToString((p+n)->info, storeString);
     printf("%s",storeString);
     while(temp!=NULL){
             

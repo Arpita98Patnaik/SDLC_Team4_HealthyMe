@@ -52,7 +52,7 @@ ret_code_t newmember(struct member *p, int n ){
 		printf("Enter height in feet:");
 		scanf("%f",&height);
 		(p+n)->h = height;
-        if(weight>1000 || height>6)
+        if(weight>1000 || height>10)
         {
             return INCONSISTENT_DATA;
         }

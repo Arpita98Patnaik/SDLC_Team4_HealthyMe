@@ -19,7 +19,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		weight = (p+n)->w;
 		height = (p+n)->h;
-        if(weight>150 || height>250)
+        if(weight>1000 || height>250)
         {
             return INCONSISTENT_DATA;
         }
@@ -30,7 +30,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		weight = ((p+n)->w)*0.45359237;
 		height = ((p+n)->h)*30.48;
-        if(weight>150 || height>250)
+        if(weight>1000 || height>250)
         {
             return INCONSISTENT_DATA;
         }
