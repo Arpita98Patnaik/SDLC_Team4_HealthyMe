@@ -18,7 +18,7 @@ int main(){
 		printf("               2- Existing User          \n");
 		printf("               3- Exit          \n");
 		printf(" ------------------------------------------------------------------ \n");	
-		printf("  Enter your choice: ");
+		printf("Enter your choice: ");
 		scanf("%d",&choice);
 		
 		switch(choice){
@@ -39,7 +39,7 @@ int main(){
 					printf("               5- To get a personalized overall report      \n");
 					printf("               6- To see your Details      \n");
 					printf(" ------------------------------------------------------------------ \n");	
-					printf("  Enter your choice: ");
+					printf("Enter your choice: ");
 					scanf("%d",&choice);
                     ecc = utility(choice,ptr1,index);
 					if(ecc!=SUCCESS)
@@ -63,7 +63,7 @@ int main(){
 				printf("               5- To get a personalized overall report      \n");
 				printf("               6- To see your Old Report      \n");
 				printf(" ------------------------------------------------------------------ \n");	
-				printf("  Enter your choice: ");
+				printf("Enter your choice: ");
 				scanf("%d",&choice);
 				switch(choice){
 					case 1:

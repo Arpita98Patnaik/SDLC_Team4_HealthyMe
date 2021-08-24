@@ -105,7 +105,7 @@ ret_code_t printBrkfstList(brkfst *head,member *p,int n){
 
             //printf("%-49s\t%d\n",temp->name,temp->cal);
             
-            (p+n)->info = addToString((p+n)->info, storeString);
+            //(p+n)->info = addToString((p+n)->info, storeString);
             if (temp->cal<brkfst_limit)
             {
                 sprintf(storeString,"%-49s\t%d\n",temp->name,temp->cal);

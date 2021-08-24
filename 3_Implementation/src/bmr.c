@@ -42,7 +42,7 @@ ret_code_t calcBMR(member *p, int n)
 	}
 	//Print
 	char storeString[100];
-	sprintf(storeString,"You have a Basal Metabolic Rate (BMR) of:%0.2f calories per day.\n",bmr);
+	sprintf(storeString,"You have a Basal Metabolic Rate (BMR) of: %0.2f calories per day.\n",bmr);
 	printf("%s",storeString);
 	(p+n)->info = addToString((p+n)->info, storeString);
 

@@ -43,7 +43,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		char storeString[100];
 		printf("------------------------------------------------------------------------------------\n");
-		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Underweight");
+		sprintf(storeString,"\nYour Body Mass Index (BMI) is: %0.2f \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Underweight");
 		printf("%s",storeString);
 		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
@@ -52,7 +52,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		char storeString[100];
 		printf("------------------------------------------------------------------------------------\n");
-		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Normal Weighted");
+		sprintf(storeString,"\nYour Body Mass Index (BMI) is: %0.2f \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Normal Weighted");
 		printf("%s",storeString);
 		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
@@ -61,7 +61,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		char storeString[100];
 		printf("------------------------------------------------------------------------------------\n");
-		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Overweight");
+		sprintf(storeString,"\nYour Body Mass Index (BMI) is: %0.2f \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Overweight");
 		printf("%s",storeString);
 		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
@@ -70,7 +70,7 @@ ret_code_t calcBMI(struct member *p, int n)
 	{
 		char storeString[100];
 		printf("------------------------------------------------------------------------------------\n");
-		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Obese");
+		sprintf(storeString,"\nYour Body Mass Index (BMI) is: %0.2f \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Obese");
 		printf("%s",storeString);
 		printf("------------------------------------------------------------------------------------\n");
 		(p+n)->info = addToString((p+n)->info, storeString);
