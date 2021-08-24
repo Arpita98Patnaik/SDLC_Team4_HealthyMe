@@ -3,13 +3,13 @@
 ## High level Test Plan
 | Test ID | Description | Exp o/p | Exp i/p | Actual o/p | Type of test |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| HT01 | Check functionality of the BMI and BMR calculation module | Expected output was obtained | User data | Expected output was obtained | Technical |
-| HT02 | Check functionality of the Diet Plan and Calorie intake module | Expected output was obtained | User's choice to view dietplan | Expected output was obtained | Technical |
+| HT01 | Check functionality of the BMI and BMR calculation module | BMI 28.73, BMR 1680.00 Cal | Age 50, Height 172 cm, Weight 85 Kg, Gender male | BMI 28.73, BMR 1680.00 Cal  | Technical |
+| HT02 | Check functionality of the Diet Plan and Calorie intake module | User should be asked to plan their meal | User's choice to view dietplan | User is asked to plan their meal | Technical |
 | HT03 | Check functionality of the Water intake module | Water intake is measured for the user | User's choice to view water intake | Water intake report generated | Technical |
 | HT04 | Check functionality of the Workout module | Workout plan generated | User's choice to view workout plan | Workout plan generated | Technical |
-| HT05 | Check if the program fetches details of existing user | Fetches details of existing user | User ID |  Fetches details of existing user  | Scenario based |
-| HT06 | Check functionality of the Report generation module | Report was generated | User selects to generate a report| Report was generated | Scenario based |
-| HT07 | Check if the program exits with proper Exit Code | Program exits | User chooses to exit | Program exits | technical |
+| HT05 | Check if the program fetches details of existing user | Details of Users BMR,BMI values, Dieta and workout plan should be fetched | User enters their ID, enters ID 0 |  Fetches all details of User with ID 0  | Scenario based |
+| HT06 | Check functionality of the Report generation module | Report should be generated | User selects to generate a report and enters 2| Personalized report is generated | Scenario based |
+| HT07 | Check if the program exits with proper Exit Code | Program must exit | User chooses to exit and enters 3 | Program exits | technical |
 
 ## Low level Test Plan
 | Test ID | Description | Exp o/p | Exp i/p | Actual o/p | Type of test |
