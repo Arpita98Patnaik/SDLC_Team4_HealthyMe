@@ -94,44 +94,76 @@ void test_mealchoice1(void)
     ////Tests if meal data base for all meals is present
     //This test should pass
     // ret_code_t mealchoice(int bmr,brkfst *b_head,lunch *l_head,snack *s_head,dinner *d_head)
+    member ptr2[3];
+    (ptr2+2)->usr_id = 2;
+    (ptr2+2)->unit = 2;
+    (ptr2+2)->w  = 800;
+    (ptr2+2)->age = 30;
+    (ptr2+2)->gender = 1;
+    (ptr2+2)->time[0] = 2;
+    (ptr2+2)->time[1] = 15;
     struct brkfst *b1 = NULL;
     struct lunch *l1 = NULL;
     struct snack *s1 = NULL;
     struct dinner *d1 = NULL;
-    TEST_ASSERT_EQUAL(NULL_PTR,mealchoice(23,b1,l1,s1,d1));
+    TEST_ASSERT_EQUAL(NULL_PTR,mealchoice(23,b1,l1,s1,d1,ptr2,2));
 }
 
 void test_mealchoice2(void)
 {
     //Tests if BMR is non-zero
     //This test should pass
+    member ptr2[3];
+    (ptr2+2)->usr_id = 2;
+    (ptr2+2)->unit = 2;
+    (ptr2+2)->w  = 800;
+    (ptr2+2)->age = 30;
+    (ptr2+2)->gender = 1;
+    (ptr2+2)->time[0] = 2;
+    (ptr2+2)->time[1] = 15;
     struct brkfst b2 = {"Milk", 50, NULL};
     struct lunch l2 = {"Cake", 250, NULL};
     struct snack s2 = {"Biscuit", 103, NULL};
     struct dinner d2 = {"Waffles", 130, NULL};
-    TEST_ASSERT_EQUAL(INCONSISTENT_DATA, mealchoice(0,&b2,&l2,&s2,&d2));
+    TEST_ASSERT_EQUAL(INCONSISTENT_DATA, mealchoice(0,&b2,&l2,&s2,&d2,ptr2,2));
 }
 
 void test_mealchoice3(void)
 {
     //Tests if BMR is positive
     //This test should pass
+    member ptr2[3];
+    (ptr2+2)->usr_id = 2;
+    (ptr2+2)->unit = 2;
+    (ptr2+2)->w  = 800;
+    (ptr2+2)->age = 30;
+    (ptr2+2)->gender = 1;
+    (ptr2+2)->time[0] = 2;
+    (ptr2+2)->time[1] = 15;
     struct brkfst b3 = {"Milk", 50, NULL};
     struct lunch l3 = {"Cake", 250, NULL};
     struct snack s3 = {"Biscuit", 103, NULL};
     struct dinner d3 = {"Waffles", 130, NULL};
-    TEST_ASSERT_EQUAL(INCONSISTENT_DATA, mealchoice(-10,&b3,&l3,&s3,&d3));
+    TEST_ASSERT_EQUAL(INCONSISTENT_DATA, mealchoice(-10,&b3,&l3,&s3,&d3,ptr2,2));
 }
 
 void test_mealchoice4(void)
 {
     //Tests if meal data base for all meals is present
     //This test should pass
+    member ptr2[3];
+    (ptr2+2)->usr_id = 2;
+    (ptr2+2)->unit = 2;
+    (ptr2+2)->w  = 800;
+    (ptr2+2)->age = 30;
+    (ptr2+2)->gender = 1;
+    (ptr2+2)->time[0] = 2;
+    (ptr2+2)->time[1] = 15;
     struct brkfst b4 = {"Milk", 50, NULL};
     struct lunch *l4 = NULL;
     struct snack s4 = {"Biscuit", 103, NULL};
     struct dinner *d4 = NULL;
-    TEST_ASSERT_EQUAL(NULL_PTR,mealchoice(23,&b4,l4,&s4,d4));
+    TEST_ASSERT_EQUAL(NULL_PTR,mealchoice(23,&b4,l4,&s4,d4,ptr2,2));
 }
 
 

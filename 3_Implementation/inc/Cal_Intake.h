@@ -2,16 +2,16 @@
     
     #define __Cal_Intake_H__
     
-    
-    int printBrkfstList(brkfst*);
-    int printLunchList(lunch*);
-    int printSnacksList(snack*);
-    int printDinnerList(dinner*);
+    #include<essentials.h>
+    int printBrkfstList(brkfst*,member*,int);
+    int printLunchList(lunch*,member*,int);
+    int printSnacksList(snack*,member*,int);
+    int printDinnerList(dinner*,member*,int);
 
-    int mealchoice(int,brkfst*,lunch*,snack*,dinner*);
-    int brkfst_priority(int,brkfst*,lunch*,snack*,dinner*);
-    int lunch_priority(int,brkfst*,lunch*,snack*,dinner*);
-    int dinner_priority(int,brkfst*,lunch*,snack*,dinner*);
-    int dietPlan(brkfst*,lunch*,snack*,dinner*);
+    ret_code_t mealchoice(int,brkfst*,lunch*,snack*,dinner*,member*,int);
+    int brkfst_priority(int,brkfst*,lunch*,snack*,dinner*,member*,int);
+    int lunch_priority(int,brkfst*,lunch*,snack*,dinner*,member*,int);
+    int dinner_priority(int,brkfst*,lunch*,snack*,dinner*,member*,int);
+    int dietPlan(brkfst*,lunch*,snack*,dinner*,member*,int);
 
 #endif   
