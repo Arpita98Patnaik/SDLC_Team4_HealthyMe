@@ -4,8 +4,12 @@
 #include<bmi_bmr.h>
 #include<water.h>
 #include<workout.h>
+#include<report_generator.h>
+
 ret_code_t utility(int choice,member *ptr, int n){
     ret_code_t ecc = 0; 
+    int option;
+
     if(ptr==NULL)
         return NULL_PTR;
     switch(choice){
@@ -17,7 +21,16 @@ ret_code_t utility(int choice,member *ptr, int n){
             ecc = calcBMR(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
-            // report_builder(ptr, string_module);   //string module to be sent
+
+                
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
+
             break;
 
         case 2:  
@@ -28,6 +41,15 @@ ret_code_t utility(int choice,member *ptr, int n){
             ecc = calorie(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
+
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
+                
             break;
         case 3:
             ecc =  workoutcheck( ptr,n );
@@ -39,8 +61,14 @@ ret_code_t utility(int choice,member *ptr, int n){
             if(ecc!=SUCCESS)
                 return ecc;
             
-            
-            //  report_builder(ptr,string_module);  //string module to be sent
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
+
             break;
 
         case 4:
@@ -51,7 +79,14 @@ ret_code_t utility(int choice,member *ptr, int n){
             ecc = workout(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
-            // report_builder(ptr,string_module);  //string module to be sent
+
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
             break;
 
         case 5:   
@@ -79,14 +114,29 @@ ret_code_t utility(int choice,member *ptr, int n){
             if(ecc!=SUCCESS)
                 return ecc;
             
-            
-            
-            //  report_builder(ptr,string_module);  //string module to be sent
-            break;
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
+	
+                break;
         case 6 :
             ecc = displaymemberdetails(ptr,n);
             if(ecc!=SUCCESS)
                 return ecc;
+
+
+                printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
+                scanf("%d", &option);
+                if (option==1)
+                {
+                    report_builder(ptr,(ptr+n)->info);
+                }
+                free((ptr+n)->info);
+
             break;
         default:
             printf("Incorrect Entry\n");

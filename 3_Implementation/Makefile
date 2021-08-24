@@ -28,6 +28,8 @@ src/Cal_Intake.c \
 src/calorie_main.c \
 src/water.c \
 src/workout.c\
+src/report_generator.c\
+src/stringBuilder.c\
 src/utility.c
 
 TEST_SRC = \

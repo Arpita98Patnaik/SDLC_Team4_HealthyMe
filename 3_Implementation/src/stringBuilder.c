@@ -1,3 +1,4 @@
+#include<essentials.h>
 
 char* addToString(char* buff,char* ch){
 	int sz = strlen(ch);

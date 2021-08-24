@@ -1,4 +1,6 @@
 #include<essentials.h>
+#include "report_generator.h"
+#include<stringBuilder.h>
 
 ret_code_t calcBMR(member *p, int n) 
 {	
@@ -39,7 +41,9 @@ ret_code_t calcBMR(member *p, int n)
 		(p+n)->bmr = bmr;
 	}
 	//Print
-	printf( "You have a Basal Metabolic Rate (BMR) of:%lf ",bmr);
+	printf( "You have a Basal Metabolic Rate (BMR) of:%0.2f ",bmr);
 	printf(" calories per day.\n");
+
+
 	return SUCCESS;
 }

@@ -1,5 +1,7 @@
 #include<essentials.h>
 #include<water.h>
+#include "report_generator.h"
+
 ret_code_t workoutcheck(member *p,int n){
     if(p==NULL)
         return NULL_PTR;
@@ -62,5 +64,7 @@ ret_code_t calcwaterquant( member *p, int n )
 		(p+n)->total_w = (q + ((t/30)*12));
 		printf("Recomended Water-intake: %f\n",(p+n)->total_w);
 	}
-    return SUCCESS;	
+	
+
+    return SUCCESS;
 }

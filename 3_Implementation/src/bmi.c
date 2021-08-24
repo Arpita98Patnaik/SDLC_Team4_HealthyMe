@@ -1,4 +1,6 @@
 #include<essentials.h>
+#include<report_generator.h>
+#include<stringBuilder.h>
 
 ret_code_t calcBMI(struct member *p, int n) 
 {
@@ -56,5 +58,6 @@ ret_code_t calcBMI(struct member *p, int n)
 		printf( "\n Your Body Mass Index (BMI) is:%lf \n",bmi);
 		printf("According to your Body Mass Index (BMI) you're %s\n","Obese");
 	}
+	(p+n)->info = addToString((p+n)->info, "Hi");
     return SUCCESS;
 }

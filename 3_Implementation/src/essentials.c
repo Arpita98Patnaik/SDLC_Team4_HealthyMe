@@ -23,8 +23,8 @@ ret_code_t newmember(struct member *p, int n ){
 	(p+n)->gender = g;
 	
     printf("Select a unit of your preference:\n");
-	printf("   1. SI units(kgs)    ");
-	printf("   2. Imperial(Pounds)    ");
+	printf("   1. SI units    ");
+	printf("   2. Imperial system    ");
 	scanf("%d",&ch_u);
 	
     if(ch_u == 1)

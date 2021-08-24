@@ -1,7 +1,4 @@
-#include "Cal_Intake.h"
-#include "water.h"
-#include "dietPlan.h"
-
+#include "essentials.h"
 
 void report_builder(struct member *member,char *info)
     {
@@ -10,28 +7,32 @@ void report_builder(struct member *member,char *info)
         char fileName[30];
         // opening file in writing mode
         sprintf(fileName,"%s.txt",member->name);
-         fptr = fopen  ("filename" ,"w");
+         fptr = fopen  (fileName ,"w");
         //fptr = fopen("%s.txt",member->name, "w");   
-                    
-    fputs("\t\t\t\t==================================================================\n",fptr);
-    fputs(" \t\t\t\t                          REPORT CARD                            \n",fptr);
-    fputs("\t\t\t\t==================================================================\n",fptr);
+       
+    fputs("==================================================================\n",fptr);
+    fputs("                          REPORT CARD                            \n",fptr);
+    fputs("==================================================================\n",fptr);
 
-                fprintf(fptr," \t\t\t\tUser name        : %s \n", member->name);
-                fprintf(fptr," \t\t\t\tUser id          : %d \n", member->usr_id);
-                fprintf(fptr," \t\t\t\tAge              : %d \n", member->age);
-                fprintf(fptr," \t\t\t\tGender           : %f \n", member->gender);
-                fprintf(fptr,"\t\t\t\tHeight            : %f \n", member->h);
-                fprintf(fptr,"\t\t\t\tWeight            : %f \n",member->w);
-                
-                int i;
-                for(i=0;i<3;i++)
+                fprintf(fptr,"User name        : %s \n", member->name);
+                fprintf(fptr,"User id          : %d \n", member->usr_id);
+                fprintf(fptr,"Age              : %d \n", member->age);
+                if (member->gender==1)
                 {
-                    fprintf(fptr,"\n");
+                    fprintf(fptr,"Gender           : %s \n", "Female");
+                }  
+                else
+                {
+                    fprintf(fptr,"Gender           : %s \n", "Male");
                 }
+                fprintf(fptr,"Height           : %0.2f Centimeters\n", member->h);
+                fprintf(fptr,"Weight           : %0.2f Kgs\n",member->w);
+                
            
-                fprintf("%s\n",info);
-        
+                fprintf(fptr,"%s\n",info);
+        fputs("==================================================================\n",fptr);
+    fputs("                           VISIT AGAIN                            \n",fptr);
+    fputs("==================================================================\n",fptr);    
 
         fclose(fptr);
 }
