@@ -19,26 +19,32 @@ ret_code_t workout(member *p,int n)
     }
     if(bmi<18.5)  // underweight
     {
+        printf("-----------------------------------------------------------\n");
         printf("You are Underweight\n");
         printf("Healthy BMI range should be 18.6 to 24.9\n");
         printf("Please increase the calorie intake\n");
         printf("Perform yoga for 30 minutes\n");
         printf("Perform low intensity push-ups and weight lifting under the doctor guidance \n");
         (p+n)->info = addToString((p+n)->info,"You are Underweight\nHealthy BMI range should be 18.6 to 24.9\nPlease increase the calorie intake\nPerform yoga for 30 minutes\nPerform low intensity push-ups and weight lifting under the doctor guidance \n");
+        printf("-----------------------------------------------------------\n");
     return SUCCESS;   
     }
     else if(bmi>=18.5 && bmi<=24.9) // normal weight
     {
+        printf("-----------------------------------------------------------\n");
         printf("You Are Fit and Healthy!!! Perform yoga, warm-up exercises , walking/jogging to maintain the healthy weight \n");
         (p+n)->info = addToString((p+n)->info,"You Are Fit and Healthy!!! Perform yoga, warm-up exercises , walking/jogging to maintain the healthy weight\n");
+        printf("-----------------------------------------------------------\n");
     }
     else    // over weight
     {
         double h=p->h;
         max_reducible_weight=(p->w)-22*(h*h)/10000.0;
+        printf("-----------------------------------------------------------\n");
         printf("You are over weight\nHealthy BMI range should be 18.6 to 24.9\n");
         (p+n)->info = addToString((p+n)->info,"You are over weight\nHealthy BMI range should be 18.6 to 24.9\n");
         printf("Your maximum reducible weight is %f\n",max_reducible_weight);
+        printf("-----------------------------------------------------------\n");
         printf("Please enter how many kilos you wish to reduce (in the range of 0 to %f)\n",max_reducible_weight);
         scanf("%f" , &reduce_weight); 
               
