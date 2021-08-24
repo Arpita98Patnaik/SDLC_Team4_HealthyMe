@@ -24,30 +24,20 @@ ret_code_t workout(member *p,int n)
         printf("Please increase the calorie intake\n");
         printf("Perform yoga for 30 minutes\n");
         printf("Perform low intensity push-ups and weight lifting under the doctor guidance \n");
-        info = addToString(info,"You are Underweight\nHealthy BMI range should be 18.6 to 24.9\nPlease increase the calorie intake\nPerform yoga for 30 minutes\nPerform low intensity push-ups and weight lifting under the doctor guidance \n");
-        int option;
-        char *info;
-        printf("Do you want to download your HealthyMe report?	1. Yes	2. No \t");
-        scanf("%d", &option);
-        if (option==1)
-        {
-            report_builder(p,info);
-        }
-
-    return SUCCESS;
-        report_builder(p,info);
-                
+        (p+n)->info = addToString((p+n)->info,"You are Underweight\nHealthy BMI range should be 18.6 to 24.9\nPlease increase the calorie intake\nPerform yoga for 30 minutes\nPerform low intensity push-ups and weight lifting under the doctor guidance \n");
+    return SUCCESS;   
     }
     else if(bmi>=18.5 && bmi<=24.9) // normal weight
     {
         printf("You Are Fit and Healthy!!! Perform yoga, warm-up exercises , walking/jogging to maintain the healthy weight \n");
+        (p+n)->info = addToString((p+n)->info,"You Are Fit and Healthy!!! Perform yoga, warm-up exercises , walking/jogging to maintain the healthy weight\n");
     }
     else    // over weight
     {
-        printf("You are over weight\n");
-        printf("Healthy BMI range should be 18.6 to 24.9\n");
         double h=p->h;
         max_reducible_weight=(p->w)-22*(h*h)/10000.0;
+        printf("You are over weight\nHealthy BMI range should be 18.6 to 24.9\n");
+        (p+n)->info = addToString((p+n)->info,"You are over weight\nHealthy BMI range should be 18.6 to 24.9\n");
         printf("Your maximum reducible weight is %f\n",max_reducible_weight);
         printf("Please enter how many kilos you wish to reduce (in the range of 0 to %f)\n",max_reducible_weight);
         scanf("%f" , &reduce_weight); 
@@ -56,6 +46,8 @@ ret_code_t workout(member *p,int n)
         {
             sprintf(store_string,"First step to lose Weight. Get up and stay active!\"\"\n\"\"Thank you\"\"\n");
             printf("%s",store_string);
+            (p+n)->info = addToString((p+n)->info,store_string);
+            
         }
         else if(reduce_weight>=1 && reduce_weight<=max_reducible_weight)
         {
@@ -66,21 +58,21 @@ ret_code_t workout(member *p,int n)
         {
             case 1:
             {
-                ecc = beginner();
+                ecc = beginner(p,n);
                 if(ecc!=SUCCESS)
                     return ecc;
                 break;
             }
             case 2:
             {
-                ecc =intermediate();
+                ecc =intermediate(p,n);
                 if(ecc!=SUCCESS)
                     return ecc;
                 break;
             }
             case 3:
             {
-                ecc = advanced();
+                ecc = advanced(p,n);
                 if(ecc!=SUCCESS)
                     return ecc;
                 break;
@@ -109,7 +101,7 @@ ret_code_t workout(member *p,int n)
     //return reduce_weight;
 return SUCCESS;
 }
-ret_code_t beginner()
+ret_code_t beginner(member *p,int n)
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
     
@@ -126,11 +118,12 @@ ret_code_t beginner()
    if(store_string==NULL)
         return NULL_PTR;
     printf("%s",store_string);
+    (p+n)->info = addToString((p+n)->info,store_string);
     return SUCCESS;
     
     
 }
-ret_code_t intermediate()
+ret_code_t intermediate(member *p,int n)
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
     
@@ -147,10 +140,10 @@ ret_code_t intermediate()
     if(store_string==NULL)
         return NULL_PTR;
     printf("%s",store_string);
+    (p+n)->info = addToString((p+n)->info,store_string);
     return SUCCESS;
 }
-
-ret_code_t advanced()
+ret_code_t advanced(member *p,int n)
 {
     total_calories=7700*reduce_weight; // for 1kg = 7700 calories
    
@@ -169,6 +162,7 @@ ret_code_t advanced()
     if(store_string==NULL)
         return NULL_PTR;
     printf("%s",store_string);
+    (p+n)->info = addToString((p+n)->info,store_string);
     
     return SUCCESS;
 }

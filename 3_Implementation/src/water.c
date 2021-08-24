@@ -52,6 +52,7 @@ ret_code_t calcwaterquant( member *p, int n )
 		(p+n)->total_w = (q + ((t/30)*12)) * 0.0295735;
 		char storeString[100];
 		sprintf(storeString,"Recomended Water-intake: %f\n",(p+n)->total_w);
+		printf("%s",storeString);
 		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	else
@@ -67,6 +68,7 @@ ret_code_t calcwaterquant( member *p, int n )
 		(p+n)->total_w = (q + ((t/30)*12));
 		char storeString[100];
 		sprintf(storeString,"Recomended Water-intake: %f\n",(p+n)->total_w);
+		printf("%s",storeString);
 		(p+n)->info = addToString((p+n)->info, storeString);
 	}
 	
