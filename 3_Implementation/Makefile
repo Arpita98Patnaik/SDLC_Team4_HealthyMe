@@ -54,7 +54,7 @@ run: all
 
 # Build and run the unit tests
 test_build: $(SRC) $(TEST_SRC) $(BUILD_DIR)
-	gcc $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 
 # Document the code using Doxygen
 doc:
@@ -65,7 +65,7 @@ test: test_build
 
 #Coverage
 coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 	./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 analyze: test memcheck staticcheck coverageCheck sanitize_check
@@ -77,7 +77,7 @@ memcheck:
 	valgrind ./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(SRC) main.c $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) $(INCLUDE_LIBS)
+	gcc -fsanitize=address -fno-omit-frame-pointer $(SRC) main.c $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) $(INCLUDE_LIBS) -lm
 	./$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 $(BUILD_DIR):
