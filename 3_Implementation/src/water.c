@@ -39,7 +39,7 @@ ret_code_t calcwaterquant( member *p, int n )
 
 	int hr=0, min=0, t=0;
 	float wt, q; 
-	printf("Calculate Water!!!!!\n");
+	printf("---------------------  Calculating Water Intake  -------------------------------\n");
 	if((p+n)->unit == 1)
 	{
 		wt = (p+n)->w * 2.2046;
