@@ -32,16 +32,16 @@ Folder              | Description
 
 PS No. |  Name  |    Features    | Issues Raised |Issues Resolved|#Test Cases|# Test Case Passed
 --|--|---|-----|--|---|-------
-99005666|Archana R Bailkeri|*|*|*|*|*|
-99005586|Jenikaben Rajendrakumar Patel|*|*|*|*|*|
-99005387|Varna  M|*|*|*|*|*|
-99005668|Suraj  Kumar|*|*|*|*|*|
-99005644|Madhura  M|*|*|*|*|*|
-99005650|Gopika  H|*|*|*|*|*|
-99005690|Paras  Panda|*|*|*|*|*|
-99005596|Pallavi  Sharma|*|*|*|*|*|
-99005590|Ajay  Victor|*|*|*|*|*|
-99005608|Manasa  K|*|*|*|*|*|
+99005666|Archana R Bailkeri|worked on workout Module and created test plan and created flowcharts for Workout Module|*|1|*|*|
+99005586|Jenikaben Rajendrakumar Patel|Creating Report,Creating Standup Meetings,Added File Handling||1|*|*|
+99005387|Varna  M|worked on BMi Module and created test plan and created flowcharts for Bmi Module||1|*|*|
+99005668|Suraj  Kumar|createed Architectural and High level digrams, worked on bmi bmr modules|*|1|*|*|
+99005644|Madhura  M|Activioty diagrams, Reprt generation tool and utility program |1|1|1|1|
+99005650|Gopika  H|worked on BMR Module and created essentials function and its respective test cases|*|1|*|*|
+99005690|Paras  Panda|Code Integration , Bug Fix , Workflows Makefile|3|2|2|2|
+99005596|Pallavi  Sharma|Calorie module and respective test cases,Uses case Diagrams|1|2|2|2|
+99005590|Ajay  Victor|Water Intake Module,Unified Data Structure to be used by all modules|2|3|2|2|
+99005608|Manasa  K|Made the flowchart for Workout Plan and  Improved and development of Workout module |*|2|*|*|
 
 ## Challenges Faced and How Was It Overcome
 
