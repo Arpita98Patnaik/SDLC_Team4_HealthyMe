@@ -8,9 +8,9 @@
 
 int main(){
     member ptr1[MAX_SIZE];
-	int index = -1, x = 0, mbid;
+	int index = -1, x = -1, mbid;
     ret_code_t ecc = 0;
-	while(x!=3){
+	while(x!=0&&x!=3){
 		int choice;
 		printf("     Healthy  Me   \n");
 		printf(" -------------------------------------------------------------------\n");
@@ -23,6 +23,7 @@ int main(){
 		
 		switch(choice){
 		
+			case 0:x=0;break;
 			case 1:
 				if(index<MAX_SIZE)
 				{
