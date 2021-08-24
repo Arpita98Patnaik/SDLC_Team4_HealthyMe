@@ -3,13 +3,13 @@
 ## High level Test Plan
 | Test ID | Description | Exp o/p | Exp i/p | Actual o/p | Type of test |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| HT01 | Check functionality of the BMI and BMR calculation module | :---- | :---- | :---- | Technical |
-| HT02 | Check functionality of the Diet Plan and Calorie intake module | :---- | :---- | :---- | Technical |
-| HT03 | Check functionality of the Water intake module | :---- | :---- | :---- | Technical |
-| HT04 | Check functionality of the Workout module | :---- | :---- | :---- | Technical |
-| HT05 | Check if the program fetches details of existing user | :---- | :---- | :---- | Scenario based |
-| HT06 | Check functionality of the Report generation module | :---- | :---- | :---- | Scenario based |
-| HT07 | Check if the program exits with proper Exit Code | :---- | :---- | :---- | technical |
+| HT01 | Check functionality of the BMI and BMR calculation module | Expected output was obtained | User data | Expected output was obtained | Technical |
+| HT02 | Check functionality of the Diet Plan and Calorie intake module | Expected output was obtained | User's choice to view dietplan | Expected output was obtained | Technical |
+| HT03 | Check functionality of the Water intake module | Water intake is measured for the user | User's choice to view water intake | Water intake report generated | Technical |
+| HT04 | Check functionality of the Workout module | Workout plan generated | User's choice to view workout plan | Workout plan generated | Technical |
+| HT05 | Check if the program fetches details of existing user | Fetches details of existing user | User ID |  Fetches details of existing user  | Scenario based |
+| HT06 | Check functionality of the Report generation module | Report was generated | User selects to generate a report| Report was generated | Scenario based |
+| HT07 | Check if the program exits with proper Exit Code | Program exits | User chooses to exit | Program exits | technical |
 
 ## Low level Test Plan
 | Test ID | Description | Exp o/p | Exp i/p | Actual o/p | Type of test |
