@@ -67,28 +67,29 @@ Based on the above data we can estimate a cost of at least **$88,250** for one p
 ## High Level Requirements:
 | ID | Description | Status (Implemented/Future)|
 |:--|:----------------------------------|:-------------------|
-| HR.01 | User should be able to enter data in SI and Imperial system of units| - |
-| HR.02 | System should be able to output personalized calorie intake | - |
+| HR.01 | User should be able to enter data in SI and Imperial system of units| Implemented |
+| HR.02 | System should be able to output personalized calorie intake | Implemented |
 | HR.03 | System should be able to output personalized workout routine | - |
-| HR.04 | System should be able to provide workout intensity choices to the user (Basic, Moderate, Extensive) | - |
-| HR.05 | System should be able to provide the ideal water intake to the user | - |
+| HR.04 | System should be able to provide workout intensity choices to the user (Basic, Moderate, Extensive) | Implemented |
+| HR.05 | System should be able to provide the ideal water intake to the user | Implemented |
+| HR.06 | System should be able to provide a dedicated report in a text file format for each Health parameter | Implemented |
 
 
 ##  Low level Requirements:
 | ID | Description | Status (Implemented/Future)|
 |:--|:----------------------------------|:-------------------|
-| LR.01 | User should be able to enter weight, height, age and gender to calculate BMI and BMR| - |
-| LR.02 | User should be able to select SI/Imperial units as per their requirement| - |
-| LR.03 | User should be able to enter the foods they had for calorie calculation| - |
-| LR.04 | System should allow manual entering of the calories consumed by the user| - |
-| LR.05 | System should be able to plan a diet chart based on the calorie requirements for a specific BMI| - |
-| LR.06 | System should be able to planout a workout regime based on users body type| - |
-| LR.07 | System should be allow the user to choose diets and workouts based on their body type and requirements| - |
-| LR.08 | System should be able to provide long and short term workput plans based on user's workout intensity choice| - |
-| LR.09 | User should be able to enter the water intake they have had for a day| - |
-| LR.10 | User should be able to account for water lost due to workout sessions| - |
-| LR.11 | System should be able to output the water intake user must have in a day| - |
-| LR.12 | User should be able to keep track of their health history| Future |
+| LR.01 | User should be able to enter weight, height, age and gender to calculate BMI and BMR| Implemented |
+| LR.02 | User should be able to select SI/Imperial units as per their requirement| Implemented |
+| LR.03 | System should allowthe user to choose if they want to generate new report or view previous reports| Implemented |
+| LR.04 | User should be able to choose the report they want to generate| Implemented |
+| LR.05 | System should be able to plan a diet chart based on the calorie requirements for a specific BMI| Implemented |
+| LR.06 | System should be able to planout a workout regime based on users body type| Implemented |
+| LR.07 | System should be allow the user to choose diets and workouts based on their body type and requirements| Implemented |
+| LR.08 | System should be able to provide long and short term workput plans| Implemented |
+| LR.09 | User should be able to view the water intake cosidering their workout schedule| Implemented |
+| LR.10 | System should be able to consider the workout time session in Hrs and minutes| Implemented |
+| LR.11 | System should be able to output the water intake user must have in a day| Implemented |
+| LR.12 | User should be able to keep track of their health history reports| Implemented |
 | LR.13 | User should be able to view and track the records on a dedicated mobile application| Future |
 | LR.14 | Enhanced database for different varieties of foods & drinks and the calories it contains| Future |
 | LR.15 | System should be able to give notification alerts to remind the user to drink more water| Future |
