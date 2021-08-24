@@ -63,8 +63,11 @@ ret_code_t calcBMI(struct member *p, int n)
 	else if (bmi >= 30) 
 	{
 		char storeString[100];
-		printf("%s",storeString);
+		
 		sprintf(storeString,"\n Your Body Mass Index (BMI) is:%lf \nAccording to your Body Mass Index (BMI) you're %s\n",bmi,"Obese");
+		printf("%s",storeString);
+		(p+n)->info = addToString((p+n)->info, storeString);
+
 	}
 	
     return SUCCESS;
