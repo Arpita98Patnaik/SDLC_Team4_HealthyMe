@@ -80,6 +80,10 @@ int main(){
 							return ecc;
 						break;
 				}
+			case 3:
+				x=3;
+				break;
+
 		  	// default:
 		  	// 	printf("Incorrect Entry\n");
             // 	return INCONSISTENT_DATA;
