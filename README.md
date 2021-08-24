@@ -46,6 +46,9 @@ PS No. |  Name  |    Features    | Issues Raised |Issues Resolved|#Test Cases|# 
 ## Git Inspector
 ![GIT_contri](https://user-images.githubusercontent.com/57947483/130591622-d6055142-a78a-4660-a1d2-b73dd70ec3cb.PNG)
 
+## HealthyME Working
+<img src = "5_ImagesAndVideos/2021-08-24 14-54-26.gif" width= "600" >
+
 ## Challenges Faced and How Was It Overcome
 
 1. Selection of common programming language
